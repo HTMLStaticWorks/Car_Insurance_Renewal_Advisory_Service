@@ -1,0 +1,109 @@
+/* 
+ * RTL Support
+ * Mirrored layout for Right-to-Left languages
+ */
+
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .ms-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+[dir="rtl"] .me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* --- Complete RTL Navbar Alignment System --- */
+[dir="rtl"] .navbar .container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+/* 1. Brand Logo: Anchored at Far Right, Icon on Far Right of Text */
+[dir="rtl"] .navbar-brand {
+    display: inline-flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    order: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 1.5rem !important;
+}
+
+[dir="rtl"] .navbar-brand i,
+[dir="rtl"] .navbar-brand svg {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+/* 2. Mobile Toggler: Anchored at Far Left on Mobile */
+[dir="rtl"] .navbar-toggler {
+    order: 1 !important;
+}
+
+/* 3. Collapse Menu Container */
+[dir="rtl"] .navbar-collapse {
+    order: 2 !important;
+}
+
+/* 4. Main Nav Links: Centered */
+[dir="rtl"] .navbar-nav {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-right: 0 !important;
+}
+
+[dir="rtl"] .nav-link {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+}
+
+/* 5. Control Icons & Action Buttons: Anchored at Far Left */
+[dir="rtl"] .navbar .d-flex.align-items-center .me-3 {
+    margin-right: 0 !important;
+    margin-left: 1rem !important;
+}
+
+[dir="rtl"] .navbar .d-flex.align-items-center {
+    flex-direction: row !important;
+}
+
+/* --- Cards & Footer RTL Overrides --- */
+[dir="rtl"] .footer-links a:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+[dir="rtl"] .btn-trailtune i {
+    margin-left: 8px;
+    margin-right: 0;
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] .service-card::after {
+    transform-origin: left;
+}
+
+[dir="rtl"] .service-card:hover::after {
+    transform-origin: right;
+}
+
+/* Dashboard RTL Overrides */
+[dir="rtl"] .dashboard-sidebar {
+    left: auto !important;
+    right: 0 !important;
+    border-right: none !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+@media (min-width: 992px) {
+    [dir="rtl"] .dashboard-main {
+        margin-left: 0 !important;
+        margin-right: 260px !important;
+    }
+}

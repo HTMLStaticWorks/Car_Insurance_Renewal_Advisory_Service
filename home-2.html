@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rate Engine & Policy Advisory | CarInsure Home 2</title>
+    <meta name="description"
+        content="Smart car insurance rate comparison engine and advisory platform. Instant quotes, cashless garage network, and zero-dep policy matching.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- CSS Frameworks & Plugins -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                CarInsure<span class="text-accent">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home <i data-lucide="chevron-down" size="14" class="ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item active" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="claims-assistance.html">Claims Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button id="theme-toggle" class="btn btn-link p-0 me-3"><i data-lucide="sun"></i></button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 me-3"><i data-lucide="arrow-left-right"></i></button>
+                    <a href="dashboard.html" class="btn btn-link p-0 me-3 text-white" title="Customer Dashboard"><i data-lucide="layout-grid"></i></a>
+                    <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home 2 Hero Section: Split Layout with Quick Quote Estimator Form -->
+    <section class="py-5 bg-dark-section border-bottom border-secondary d-flex align-items-center hero-section-home2 position-relative overflow-hidden">
+        <!-- Ambient Radial Glow Halo behind Form -->
+        <div class="hero-glow-aura"></div>
+
+        <div class="container py-4 position-relative z-index-1">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+                    <span class="badge bg-accent px-3 py-2 mb-3 fs-6 d-inline-flex align-items-center">
+                        <span class="pulse-ring me-2"></span> NEXT-GEN ADVISORY ENGINE
+                    </span>
+                    <h1 class="display-4 fw-bold mb-4">Smart Car Insurance <span class="text-accent">Built for Savings.</span></h1>
+                    <p class="lead opacity-75 mb-4">Compare renewal rates across 20+ top-rated carriers in under 60 seconds. Get guaranteed zero-depreciation coverage, instant policy transfers, and 24/7 legal claims advocacy.</p>
+
+                    <!-- Trust Stats Bar -->
+                    <div class="row g-4 py-3 my-4 border-top border-bottom border-secondary">
+                        <div class="col-4 text-center text-lg-start">
+                            <div class="h4 text-accent fw-bold mb-1">100k+</div>
+                            <div class="small opacity-75">Insured Drivers</div>
+                        </div>
+                        <div class="col-4 text-center text-lg-start border-start border-secondary">
+                            <div class="h4 text-success fw-bold mb-1">98.4%</div>
+                            <div class="small opacity-75">Claims Approved</div>
+                        </div>
+                        <div class="col-4 text-center text-lg-start border-start border-secondary">
+                            <div class="h4 text-accent fw-bold mb-1">$4.2M+</div>
+                            <div class="small opacity-75">Client Savings</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-4">
+                        <a href="services.html" class="btn btn-primary-trailtune btn-trailtune py-3 px-4"><i data-lucide="sliders" size="18" class="me-2"></i> Explore Services</a>
+                        <a href="partners.html" class="btn btn-outline-trailtune btn-trailtune py-3 px-4"><i data-lucide="building-2" size="18" class="me-2"></i> View 20+ Carriers</a>
+                    </div>
+                </div>
+
+                <!-- Quick Quote Estimator Card with Floating Badges & Animations -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-card-wrapper position-relative">
+                        <!-- Floating Badge 1 (Top Right) -->
+                        <div class="hero-floating-badge badge-top-right animate-float-slow">
+                            <span class="live-pulse-dot me-2"></span>
+                            <span>⚡ <strong>$280 Avg Saved</strong> / Renewal</span>
+                        </div>
+
+                        <!-- Floating Badge 2 (Bottom Left) -->
+                        <div class="hero-floating-badge badge-bottom-left animate-float-reverse">
+                            <i data-lucide="shield-check" class="text-success me-2" size="18"></i>
+                            <span>🛡️ <strong>Zero-Dep</strong> Guaranteed</span>
+                        </div>
+
+                        <div class="p-4 p-lg-5 border border-accent rounded card-trailtune shadow-lg position-relative z-index-2">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-accent p-3 rounded me-3 text-white">
+                                    <i data-lucide="zap" size="24"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Instant Renewal Estimator</h5>
+                                    <p class="small opacity-75 mb-0">Get tailored carrier quotes in 3 simple fields</p>
+                                </div>
+                            </div>
+
+                            <form id="home2-quick-quote-form">
+                                <div class="mb-4">
+                                    <label class="form-label small fw-bold">Vehicle Registration Number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-dark border-secondary text-accent"><i data-lucide="car" size="16"></i></span>
+                                        <input type="text" class="form-control newsletter-input" placeholder="e.g. CA-94102-X" required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Vehicle Model Year</label>
+                                        <select class="form-select newsletter-input">
+                                            <option value="2025">2025 (Brand New)</option>
+                                            <option value="2023" selected>2021 - 2024</option>
+                                            <option value="2018">2016 - 2020</option>
+                                            <option value="older">2015 or Older</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Current Policy Status</label>
+                                        <select class="form-select newsletter-input">
+                                            <option value="active" selected>Expires in < 30 Days</option>
+                                            <option value="expired">Already Expired</option>
+                                            <option value="new">New Vehicle Purchase</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 text-start">
+                                    <label class="form-label small fw-bold">Desired Coverage Tier</label>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <input type="radio" class="btn-check" name="coverageTier" id="tierZeroDep" checked>
+                                        <label class="btn btn-outline-trailtune flex-fill py-2 btn-sm" for="tierZeroDep">Zero-Dep Shield</label>
+
+                                        <input type="radio" class="btn-check" name="coverageTier" id="tierComp">
+                                        <label class="btn btn-outline-trailtune flex-fill py-2 btn-sm" for="tierComp">Comprehensive</label>
+
+                                        <input type="radio" class="btn-check" name="coverageTier" id="tierTP">
+                                        <label class="btn btn-outline-trailtune flex-fill py-2 btn-sm" for="tierTP">Third-Party</label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary-trailtune btn-trailtune w-100 py-3 fw-bold">
+                                    Calculate My Instant Renewal Rates &rarr;
+                                </button>
+                                
+                                <div id="quote-calc-result" class="alert alert-success d-none mt-4 p-3 text-center border-success">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i data-lucide="check-circle" class="text-success me-2" size="20"></i>
+                                        <span class="small fw-bold text-success">Estimated Best Rate Found: $29/mo (Saved $240/yr)!</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Home 2 Section 1: 360 Coverage Orbit Ecosystem -->
+    <section class="py-5 bg-dark-section border-bottom border-secondary my-2 overflow-hidden position-relative">
+        <div class="container py-5">
+            <div class="text-center mb-5 pb-3" data-aos="fade-up">
+                <h6 class="text-accent mb-2">360° PROTECTION</h6>
+                <h2 class="display-5 mb-3">Comprehensive Coverage Ecosystem</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 680px;">Discover how our interconnected policies shield every aspect of your driving experience. Hover over the nodes to explore.</p>
+            </div>
+
+            <div class="row align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-8 position-relative orbit-container d-flex justify-content-center align-items-center" style="min-height: 500px;">
+                    
+                    <!-- Orbit Rings -->
+                    <div class="orbit-ring orbit-ring-1"></div>
+                    <div class="orbit-ring orbit-ring-2"></div>
+                    <div class="orbit-ring orbit-ring-3"></div>
+
+                    <!-- Central Hub -->
+                    <div class="orbit-center-hub shadow-lg">
+                        <i data-lucide="shield" class="text-accent hub-icon mb-1" size="48"></i>
+                        <h4 class="mb-0 text-white fw-bold">Total Shield</h4>
+                    </div>
+
+                    <!-- Orbit Nodes -->
+                    <div class="orbit-node" style="--angle: 0deg; --radius: 200px;">
+                        <div class="node-icon"><i data-lucide="cloud-lightning" size="24"></i></div>
+                        <div class="node-info">
+                            <h5>Weather Damage</h5>
+                            <p>Hail, flood, & storm</p>
+                        </div>
+                    </div>
+
+                    <div class="orbit-node" style="--angle: 60deg; --radius: 200px;">
+                        <div class="node-icon"><i data-lucide="car-front" size="24"></i></div>
+                        <div class="node-info">
+                            <h5>Accident Cover</h5>
+                            <p>Collision & roll-over</p>
+                        </div>
+                    </div>
+
+                    <div class="orbit-node" style="--angle: 120deg; --radius: 200px;">
+                        <div class="node-icon"><i data-lucide="users" size="24"></i></div>
+                        <div class="node-info">
+                            <h5>Third-Party</h5>
+                            <p>Liability & property</p>
+                        </div>
+                    </div>
+
+                    <div class="orbit-node" style="--angle: 180deg; --radius: 200px;">
+                        <div class="node-icon"><i data-lucide="key" size="24"></i></div>
+                        <div class="node-info">
+                            <h5>Theft Protection</h5>
+                            <p>Vehicle & key replacement</p>
+                        </div>
+                    </div>
+
+                    <div class="orbit-node" style="--angle: 240deg; --radius: 200px;">
+                        <div class="node-icon"><i data-lucide="wrench" size="24"></i></div>
+                        <div class="node-info">
+                            <h5>Roadside Assist</h5>
+                            <p>24/7 towing & repairs</p>
+                        </div>
+                    </div>
+
+                    <div class="orbit-node" style="--angle: 300deg; --radius: 200px;">
+                        <div class="node-icon"><i data-lucide="heart-pulse" size="24"></i></div>
+                        <div class="node-info">
+                            <h5>Personal Accident</h5>
+                            <p>Medical & injury cover</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Home 2 Section 2: Interactive Coverage Needs Diagnostic Tool -->
+    <section class="py-5 bg-black border-bottom border-secondary my-2 overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <span class="text-accent fw-bold text-uppercase small">DIAGNOSTIC ASSISTANT</span>
+                    <h2 class="display-5 mb-4 mt-2">Which Coverage Matches Your Driving Profile?</h2>
+                    <p class="opacity-75 mb-4">Answering 4 quick questions helps us match you with underwriters that offer specific discounts for your driving style and vehicle category.</p>
+
+                    <div class="d-flex align-items-center p-3 border border-secondary rounded tier-progress-box mb-4">
+                        <i data-lucide="check-circle-2" class="text-accent me-3" size="32"></i>
+                        <div>
+                            <h6 class="mb-0">99.1% Matching Precision</h6>
+                            <p class="small opacity-75 mb-0">Algorithms cross-reference 20+ carrier terms</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center p-3 border border-secondary rounded tier-progress-box">
+                        <i data-lucide="shield-check" class="text-success me-3" size="32"></i>
+                        <div>
+                            <h6 class="mb-0">Zero Upfront Advisory Fee</h6>
+                            <p class="small opacity-75 mb-0">Free policy evaluation & renewal advisory</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="row g-4">
+                        <!-- Profile Card 1 -->
+                        <div class="col-md-6">
+                            <div class="diag-card position-relative rounded overflow-hidden shadow-sm h-100" style="min-height: 290px;">
+                                <img src="assets/images/diag_commuter.jpg" alt="Daily Commuter" class="diag-card-img w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <div class="diag-card-gradient position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- Default Card Bottom Header -->
+                                <div class="diag-card-header position-absolute bottom-0 start-0 w-100 p-4 z-index-1">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="car" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">Daily Commuter</h5>
+                                    </div>
+                                    <span class="badge bg-dark bg-opacity-75 text-white border border-secondary small">Hover to reveal details &rarr;</span>
+                                </div>
+
+                                <!-- Hover Reveal Content -->
+                                <div class="diag-card-overlay position-absolute top-0 start-0 w-100 h-100 p-4 d-flex flex-column justify-content-center z-index-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="car" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">Daily Commuter</h5>
+                                    </div>
+                                    <p class="small text-white-50 mb-3">Drives 10k–15k miles annually. Needs zero-depreciation and roadside assistance for peace of mind.</p>
+                                    <a href="services.html" class="btn btn-primary-trailtune btn-sm py-2 px-3 align-self-start fw-bold">
+                                        Recommended: Comprehensive Shield &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Card 2 -->
+                        <div class="col-md-6">
+                            <div class="diag-card position-relative rounded overflow-hidden shadow-sm h-100" style="min-height: 290px;">
+                                <img src="assets/images/diag_ev.jpg" alt="EV & Tech Car Owner" class="diag-card-img w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <div class="diag-card-gradient position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- Default Card Bottom Header -->
+                                <div class="diag-card-header position-absolute bottom-0 start-0 w-100 p-4 z-index-1">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="zap" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">EV & Tech Car Owner</h5>
+                                    </div>
+                                    <span class="badge bg-dark bg-opacity-75 text-white border border-secondary small">Hover to reveal details &rarr;</span>
+                                </div>
+
+                                <!-- Hover Reveal Content -->
+                                <div class="diag-card-overlay position-absolute top-0 start-0 w-100 h-100 p-4 d-flex flex-column justify-content-center z-index-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="zap" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">EV & Tech Car Owner</h5>
+                                    </div>
+                                    <p class="small text-white-50 mb-3">Drives Tesla, Nissan, or Hyundai EV. Requires wallbox charger protection and specialized battery clauses.</p>
+                                    <a href="services.html" class="btn btn-primary-trailtune btn-sm py-2 px-3 align-self-start fw-bold">
+                                        Recommended: EV Battery Plus &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Card 3 -->
+                        <div class="col-md-6">
+                            <div class="diag-card position-relative rounded overflow-hidden shadow-sm h-100" style="min-height: 290px;">
+                                <img src="assets/images/diag_family.jpg" alt="Multi-Car Household" class="diag-card-img w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <div class="diag-card-gradient position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- Default Card Bottom Header -->
+                                <div class="diag-card-header position-absolute bottom-0 start-0 w-100 p-4 z-index-1">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="users" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">Multi-Car Household</h5>
+                                    </div>
+                                    <span class="badge bg-dark bg-opacity-75 text-white border border-secondary small">Hover to reveal details &rarr;</span>
+                                </div>
+
+                                <!-- Hover Reveal Content -->
+                                <div class="diag-card-overlay position-absolute top-0 start-0 w-100 h-100 p-4 d-flex flex-column justify-content-center z-index-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="users" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">Multi-Car Household</h5>
+                                    </div>
+                                    <p class="small text-white-50 mb-3">Owns 2+ family vehicles. Eligible for bundled multi-vehicle discounts up to 25% off annual premiums.</p>
+                                    <a href="pricing.html" class="btn btn-primary-trailtune btn-sm py-2 px-3 align-self-start fw-bold">
+                                        Recommended: Fleet Bundle &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Card 4 -->
+                        <div class="col-md-6">
+                            <div class="diag-card position-relative rounded overflow-hidden shadow-sm h-100" style="min-height: 290px;">
+                                <img src="assets/images/diag_ncb.jpg" alt="NCB Saver Driver" class="diag-card-img w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <div class="diag-card-gradient position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- Default Card Bottom Header -->
+                                <div class="diag-card-header position-absolute bottom-0 start-0 w-100 p-4 z-index-1">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="award" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">NCB Saver Driver</h5>
+                                    </div>
+                                    <span class="badge bg-dark bg-opacity-75 text-white border border-secondary small">Hover to reveal details &rarr;</span>
+                                </div>
+
+                                <!-- Hover Reveal Content -->
+                                <div class="diag-card-overlay position-absolute top-0 start-0 w-100 h-100 p-4 d-flex flex-column justify-content-center z-index-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="diag-icon-badge me-2 text-white bg-accent rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                            <i data-lucide="award" size="16"></i>
+                                        </div>
+                                        <h5 class="mb-0 text-white fw-bold">NCB Saver Driver</h5>
+                                    </div>
+                                    <p class="small text-white-50 mb-3">Has 3+ years claim-free record. Protect your accumulated 50% No-Claim Bonus discount tier.</p>
+                                    <a href="services.html" class="btn btn-primary-trailtune btn-sm py-2 px-3 align-self-start fw-bold">
+                                        Recommended: NCB Protect Rider &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Home 2 Section 3: Live Cashless Network Locator & Emergency Dispatch -->
+    <section class="py-5 bg-dark-section border-bottom border-secondary my-2 overflow-hidden">
+        <div class="container py-5">
+            <div class="text-center mb-5 pb-3" data-aos="fade-up">
+                <h6 class="text-accent mb-2">NATIONWIDE REPAIR NETWORK</h6>
+                <h2 class="display-5 mb-3">5,280+ Cashless Repair Garages</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 680px;">Walk into any network workshop without paying out-of-pocket repair costs. Cashless bills are settled directly between insurer and workshop.</p>
+            </div>
+
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="p-4 p-lg-5 border border-secondary rounded card-trailtune">
+                        <div class="d-flex align-items-center mb-4">
+                            <i data-lucide="map-pin" class="text-accent me-3" size="32"></i>
+                            <div>
+                                <h5 class="mb-1">Locate Nearest Cashless Garage</h5>
+                                <p class="small opacity-75 mb-0">Search active workshops by ZIP code or city</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control newsletter-input" placeholder="Enter ZIP Code or City (e.g. 90210)">
+                            <button class="btn btn-primary-trailtune px-4" type="button">Search Garages</button>
+                        </div>
+
+                        <div class="p-3 border border-secondary rounded tier-progress-box">
+                            <div class="d-flex justify-content-between align-items-center small">
+                                <span><i data-lucide="wrench" class="text-accent me-1" size="14"></i> Average Repair Turnaround:</span>
+                                <span class="fw-bold text-accent">48 Hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="p-4 p-lg-5 border border-accent rounded emergency-towing-box">
+                        <div class="d-flex align-items-center mb-3">
+                            <i data-lucide="phone-call" class="text-accent me-3" size="32"></i>
+                            <div>
+                                <h5 class="text-accent mb-1">24/7 Roadside Towing Hotlines</h5>
+                                <p class="small opacity-75 mb-0">Direct priority dispatch line for active policyholders</p>
+                            </div>
+                        </div>
+                        <p class="small opacity-75 mb-4">Experiencing a breakdown, flat tire, or collision? Call our 24/7 dispatch hotline for free cashless towing within 25 miles of any major highway.</p>
+                        <a href="tel:18005550199" class="btn btn-primary-trailtune w-100 py-3 fw-bold">
+                            <i data-lucide="phone" size="18" class="me-2"></i> Call Hotline: 1-800-555-0199
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Home 2 Section 4: Verified Driver Reviews & Ratings Carousel -->
+    <section class="py-5 bg-black border-bottom border-secondary my-2 overflow-hidden">
+        <div class="container py-5">
+            <div class="text-center mb-5 pb-3" data-aos="fade-up">
+                <h6 class="text-accent mb-2">REAL DRIVER FEEDBACK</h6>
+                <h2 class="display-5 mb-3">Trusted by Over 100,000 Vehicle Owners</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 680px;">See how drivers saved up to 25% on annual premiums and settled claims stress-free.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Review 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 p-lg-5 border border-secondary rounded card-trailtune h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="badge bg-success ms-auto">Verified Driver</span>
+                        </div>
+                        <p class="small opacity-75 mb-4 flex-grow-1">"CarInsure saved me $240 on my Honda Accord renewal! They transferred my 50% NCB instantly and got me zero-dep coverage at no extra charge."</p>
+                        <div class="d-flex align-items-center pt-3 border-top border-secondary mt-auto">
+                            <div class="perk-icon-box text-accent p-2 rounded-circle me-3">
+                                <i data-lucide="user" size="20"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Marcus Vance</h6>
+                                <p class="small opacity-50 mb-0">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 p-lg-5 border border-secondary rounded card-trailtune h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="badge bg-success ms-auto">Verified Driver</span>
+                        </div>
+                        <p class="small opacity-75 mb-4 flex-grow-1">"When my Tesla Model Y had a minor collision, my assigned CarInsure advocate handled the surveyor meeting and approved $1,800 in repairs in 4 hours."</p>
+                        <div class="d-flex align-items-center pt-3 border-top border-secondary mt-auto">
+                            <div class="perk-icon-box text-accent p-2 rounded-circle me-3">
+                                <i data-lucide="user" size="20"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Elena Rostova</h6>
+                                <p class="small opacity-50 mb-0">Austin, TX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 p-lg-5 border border-secondary rounded card-trailtune h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="badge bg-success ms-auto">Verified Fleet</span>
+                        </div>
+                        <p class="small opacity-75 mb-4 flex-grow-1">"Managing 6 commercial vans was a headache until we moved to CarInsure. Single dashboard, consolidated billing, and 20% fleet savings!"</p>
+                        <div class="d-flex align-items-center pt-3 border-top border-secondary mt-auto">
+                            <div class="perk-icon-box text-accent p-2 rounded-circle me-3">
+                                <i data-lucide="user" size="20"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">David Sterling</h6>
+                                <p class="small opacity-50 mb-0">Chicago, IL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                        CarInsure<span class="text-accent">.</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Premium car insurance advisory platform. We specialize in helping you compare, renew, and save on vehicle insurance with a unified customer dashboard.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Compare Quotes</a></li>
+                        <li><a href="login.html">Policy Management</a></li>
+                        <li><a href="services.html">Renewal Reminders</a></li>
+                        <li><a href="contact.html">Claims Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Join Our Newsletter</h5>
+                    <p class="small opacity-75">Get the latest tips on saving on car insurance and early renewal offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control newsletter-input" placeholder="Email Address">
+                        <button class="btn btn-primary-trailtune" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p class="small mb-0 opacity-90">&copy; 2026 Car Insurance Renewal & Advisory Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scroll-top" title="Go to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Interactive Quick Estimator Demo Handler
+        document.getElementById('home2-quick-quote-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Comparing 20+ Carrier Rates...';
+            
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+                const resultBox = document.getElementById('quote-calc-result');
+                if (resultBox) {
+                    resultBox.classList.remove('d-none');
+                    lucide.createIcons();
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

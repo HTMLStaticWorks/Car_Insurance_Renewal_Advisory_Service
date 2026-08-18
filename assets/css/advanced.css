@@ -1,0 +1,153 @@
+/* --- Advanced Problem/Solution Section --- */
+.advanced-section {
+    position: relative;
+    background: linear-gradient(135deg, #050505 0%, #0d0d0d 100%);
+    overflow: hidden;
+    padding: 120px 0;
+    color: #F3F4F6 !important; /* Force light text */
+}
+
+/* Light Theme Overrides for Advanced Section */
+body.light-theme .advanced-section {
+    background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);
+    color: #374151 !important;
+}
+
+.advanced-section h1, 
+.advanced-section h2, 
+.advanced-section h3, 
+.advanced-section h4, 
+.advanced-section h5, 
+.advanced-section h6 {
+    color: #FFFFFF !important;
+}
+
+body.light-theme .advanced-section h1, 
+body.light-theme .advanced-section h2, 
+body.light-theme .advanced-section h3, 
+body.light-theme .advanced-section h4, 
+body.light-theme .advanced-section h5, 
+body.light-theme .advanced-section h6 {
+    color: #111827 !important; /* Dark text for headings in light theme */
+}
+
+.advanced-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+body.light-theme .advanced-section::before {
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.08) 0%, transparent 60%);
+}
+
+.advanced-card {
+    background: rgba(255, 255, 255, 0.02) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 24px !important;
+    padding: 3rem !important;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    z-index: 2;
+    color: #F3F4F6 !important;
+}
+
+body.light-theme .advanced-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    color: #4B5563 !important;
+}
+
+.advanced-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.04) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+body.light-theme .advanced-card:hover {
+    background: #FFFFFF !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+    border-color: rgba(239, 68, 68, 0.3) !important; /* Subtle red border on hover for struggle */
+}
+
+.advanced-card-accent {
+    border: 1px solid rgba(37, 99, 235, 0.3) !important;
+    background: linear-gradient(145deg, rgba(37, 99, 235, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+}
+
+body.light-theme .advanced-card-accent {
+    border: 1px solid rgba(37, 99, 235, 0.2) !important;
+    background: linear-gradient(145deg, #FFFFFF 0%, rgba(37, 99, 235, 0.03) 100%) !important;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08) !important;
+}
+
+.advanced-card-accent:hover {
+    border-color: rgba(37, 99, 235, 0.6) !important;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15) !important;
+}
+
+body.light-theme .advanced-card-accent:hover {
+    border-color: rgba(37, 99, 235, 0.5) !important;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15) !important;
+}
+
+.advanced-list-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 1.5rem !important;
+    transition: transform 0.2s ease;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+body.light-theme .advanced-list-item {
+    color: #4B5563 !important;
+}
+
+.advanced-list-item:hover {
+    transform: translateX(10px);
+    color: #FFFFFF !important;
+}
+
+body.light-theme .advanced-list-item:hover {
+    color: #111827 !important;
+}
+
+.icon-wrapper {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-right: 1rem !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+}
+
+.icon-wrapper.danger {
+    background: rgba(239, 68, 68, 0.1) !important;
+    color: #ef4444 !important;
+}
+
+body.light-theme .icon-wrapper.danger {
+    background: rgba(239, 68, 68, 0.15) !important;
+}
+
+.icon-wrapper.accent {
+    background: rgba(37, 99, 235, 0.1) !important;
+    color: #3b82f6 !important;
+}
+
+body.light-theme .icon-wrapper.accent {
+    background: rgba(37, 99, 235, 0.15) !important;
+}

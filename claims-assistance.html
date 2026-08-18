@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claims Assistance | Car Insurance Renewal & Advisory Service</title>
+
+    <!-- CSS Frameworks & Plugins -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+
+            <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                CarInsure<span class="text-accent">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home <i data-lucide="chevron-down" size="14" class="ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="claims-assistance.html">Claims Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button id="theme-toggle" class="btn btn-link p-0 me-3"><i data-lucide="sun"></i></button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 me-3"><i data-lucide="arrow-left-right"></i></button>
+                    <a href="dashboard.html" class="btn btn-link p-0 me-3 text-white" title="Customer Dashboard"><i data-lucide="layout-grid"></i></a>
+                    <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-accent py-5">
+        <div class="container text-center">
+            <h6 class="text-white" data-aos="fade-up">24/7 SUPPORT PORTAL</h6>
+            <h1 class="display-3 text-white" data-aos="fade-up" data-aos-delay="100">Claims Assistance Center</h1>
+            <p class="lead text-white opacity-75 mx-auto" style="max-width: 700px;">Filing a car insurance claim can be overwhelming. Our dedicated liaisons walk you through every step to ensure fast settlements and zero stress.</p>
+        </div>
+    </section>
+
+    <!-- 4-Step Emergency Action Guide -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">WHAT TO DO IN AN ACCIDENT</h6>
+                <h2>4-Step Emergency Protocol</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-trailtune h-100 border border-secondary rounded overflow-hidden">
+                        <img src="assets/images/emergency_step1.jpg" alt="Ensure Safety" class="card-img-top p-2" style="height: 220px; object-fit: cover;">
+                        <div class="p-4 bg-dark-section d-flex flex-column h-100">
+                            <h5 class="mb-2 text-accent">1. Ensure Safety</h5>
+                            <p class="small opacity-75 mb-0">Turn on hazard lights, move to a safe spot if possible, and call emergency services if anyone is injured.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-trailtune h-100 border border-secondary rounded overflow-hidden">
+                        <img src="assets/images/emergency_step2.jpg" alt="Take Evidence Photos" class="card-img-top p-2" style="height: 220px; object-fit: cover;">
+                        <div class="p-4 bg-dark-section d-flex flex-column h-100">
+                            <h5 class="mb-2 text-accent">2. Evidence Photos</h5>
+                            <p class="small opacity-75 mb-0">Capture clear photos of damage on all vehicles involved, road condition, and nearby traffic signs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-trailtune h-100 border border-secondary rounded overflow-hidden">
+                        <img src="assets/images/emergency_step3.jpg" alt="Exchange Details" class="card-img-top p-2" style="height: 220px; object-fit: cover;">
+                        <div class="p-4 bg-dark-section d-flex flex-column h-100">
+                            <h5 class="mb-2 text-accent">3. Exchange Details</h5>
+                            <p class="small opacity-75 mb-0">Collect driver license numbers, insurance policy numbers, and contact info of all parties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card card-trailtune h-100 border border-secondary rounded overflow-hidden">
+                        <img src="assets/images/emergency_step4.jpg" alt="Contact Advisor" class="card-img-top p-2" style="height: 220px; object-fit: cover;">
+                        <div class="p-4 bg-dark-section d-flex flex-column h-100">
+                            <h5 class="mb-2 text-accent">4. Contact Advisor</h5>
+                            <p class="small opacity-75 mb-0">Notify our claims support team immediately to start the paperwork and arrange towing or garage repair.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Claim Filing Form & Document Checklist -->
+    <section class="bg-dark-section py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Checklist -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h3 class="mb-4">Required Documents Checklist</h3>
+                    <p class="opacity-75 mb-4">Having these documents ready speeds up approval from your insurance carrier:</p>
+                    
+                    <div class="p-4 border border-secondary rounded tier-progress-box">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input border-secondary" type="checkbox" id="check1" checked>
+                            <label class="form-check-label ms-2" for="check1">
+                                <strong>Vehicle Registration Certificate (RC)</strong>
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input border-secondary" type="checkbox" id="check2" checked>
+                            <label class="form-check-label ms-2" for="check2">
+                                <strong>Driver's License Copy</strong>
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input border-secondary" type="checkbox" id="check3">
+                            <label class="form-check-label ms-2" for="check3">
+                                <strong>Active Policy Certificate / ID Card</strong>
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input border-secondary" type="checkbox" id="check4">
+                            <label class="form-check-label ms-2" for="check4">
+                                <strong>Accident Scene Photos (Min. 3 photos)</strong>
+                            </label>
+                        </div>
+                        <div class="form-check mb-0">
+                            <input class="form-check-input border-secondary" type="checkbox" id="check5">
+                            <label class="form-check-label ms-2" for="check5">
+                                <strong>Police Report / FIR Copy (If theft or third-party injury)</strong>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 p-4 border border-accent rounded emergency-towing-box">
+                        <h6 class="text-accent mb-2"><i data-lucide="life-buoy" size="18" class="me-1"></i> Need Emergency Towing?</h6>
+                        <p class="small opacity-75 mb-3">Our cashless roadside partner network is available 24 hours a day, 7 days a week.</p>
+                        <a href="tel:18005550199" class="btn btn-primary-trailtune w-100 py-3"><i data-lucide="phone" size="16" class="me-2"></i> Call Towing Hotline: 1-800-555-0199</a>
+                    </div>
+                </div>
+
+                <!-- Claim Form -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="p-5 border border-secondary rounded card-trailtune">
+                        <h3 class="mb-2">File a New Claim Request</h3>
+                        <p class="small opacity-75 mb-4">Submit your incident details below. A dedicated claims advisor will review your case and contact you within 2 hours.</p>
+                        
+                        <form id="claim-request-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small text-uppercase opacity-50">Policy Number</label>
+                                    <input type="text" class="form-control newsletter-input" placeholder="e.g. #CAR-89421" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-uppercase opacity-50">Vehicle Registration / VIN</label>
+                                    <input type="text" class="form-control newsletter-input" placeholder="e.g. 1HGCR2F83HA000000" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-uppercase opacity-50">Date of Incident</label>
+                                    <input type="date" class="form-control newsletter-input" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-uppercase opacity-50">Type of Claim</label>
+                                    <select class="form-select newsletter-input">
+                                        <option value="accident">Accident / Collision Damage</option>
+                                        <option value="windshield">Windshield / Glass Damage</option>
+                                        <option value="theft">Theft / Vandalism</option>
+                                        <option value="weather">Flood / Weather Damage</option>
+                                        <option value="thirdparty">Third-Party Property Damage</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-uppercase opacity-50">Description of Incident</label>
+                                    <textarea class="form-control newsletter-input" rows="4" placeholder="Briefly describe what happened..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-trailtune btn-trailtune w-100 py-3">SUBMIT CLAIM REQUEST</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Section 1: Claim Settlement Timelines & Payout Channels -->
+    <section class="py-5 bg-black border-top border-bottom border-secondary">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">ESTIMATED CLAIM TIMELINES</h6>
+                <h2 class="display-5">Settlement Channels & Turnaround Times</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 650px;">Clear, transparent processing times tailored to your repair choice.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-trailtune h-100 border border-secondary rounded overflow-hidden">
+                        <img src="assets/images/timeline_cashless.jpg" alt="Cashless Garage Repair" class="card-img-top p-2" style="height: 250px; object-fit: cover;">
+                        <div class="p-4 bg-dark-section d-flex flex-column h-100">
+                            <h4 class="mb-2">Cashless Garage Repair</h4>
+                            <div class="h3 text-accent mb-3">24-48 Hours</div>
+                            <p class="small opacity-75 mb-4">Direct approval and payment sent straight to over 2,500+ authorized cashless network garages nationwide.</p>
+                            <ul class="list-unstyled small opacity-75 mb-4">
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> Zero out-of-pocket payment</li>
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> Free doorstep pick-up & drop</li>
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> 6-month repair warranty</li>
+                            </ul>
+                            <a href="partners.html" class="btn btn-primary-trailtune w-100 mt-auto py-3">Find Cashless Garage</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-trailtune h-100 border border-accent rounded overflow-hidden">
+                        <img src="assets/images/timeline_reimburse.jpg" alt="Reimbursement Payout" class="card-img-top p-2" style="height: 250px; object-fit: cover;">
+                        <div class="p-4 bg-dark-section d-flex flex-column h-100">
+                            <h4 class="mb-2">Reimbursement Payout</h4>
+                            <div class="h3 text-accent mb-3">3-5 Days</div>
+                            <p class="small opacity-75 mb-4">Repaired at your non-network garage of choice? Upload original bills for direct electronic bank transfer.</p>
+                            <ul class="list-unstyled small opacity-75 mb-4">
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> Upload bills to customer vault</li>
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> Surveyor assigned in 2 hours</li>
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> Direct bank account deposit</li>
+                            </ul>
+                            <a href="dashboard.html" class="btn btn-primary-trailtune w-100 mt-auto py-3">Upload Repair Bills</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-trailtune h-100 border border-secondary rounded overflow-hidden">
+                        <img src="assets/images/timeline_totalloss.jpg" alt="Total Loss / Theft" class="card-img-top p-2" style="height: 250px; object-fit: cover;">
+                        <div class="p-4 bg-dark-section d-flex flex-column h-100">
+                            <h4 class="mb-2">Total Loss / Theft</h4>
+                            <div class="h3 text-accent mb-3">7-10 Days</div>
+                            <p class="small opacity-75 mb-4">Full IDV (Insured Declared Value) settlement payout handled directly by our senior claims legal advocates.</p>
+                            <ul class="list-unstyled small opacity-75 mb-4">
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> 100% IDV payout guarantee</li>
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> RTO & legal paper processing</li>
+                                <li class="mb-2"><i data-lucide="check-circle" class="text-accent me-2" size="16"></i> Courtesy vehicle rental credit</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary-trailtune w-100 mt-auto py-3">Speak to Advocate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Guaranteed Claim Protection Perks & Advocacy Grid -->
+    <section class="py-5 bg-dark-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">WHY CLAIM WITH US</h6>
+                <h2 class="display-5 mb-3">Dedicated Claims Advocacy & Perks</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 700px;">Unlike buying directly from an insurer where you fight claims alone, CarInsure acts as your personal legal and technical advocate throughout the entire process.</p>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="row g-4 mb-5" data-aos="fade-up">
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded text-center h-100 card-trailtune">
+                        <div class="display-5 text-accent fw-bold mb-2">98.4%</div>
+                        <h6 class="mb-1">Industry Approval Ratio</h6>
+                        <p class="small opacity-75 mb-0">Highest claim success rate across 25+ networks</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded text-center h-100 card-trailtune">
+                        <div class="display-5 text-success fw-bold mb-2">18 Mins</div>
+                        <h6 class="mb-1">Average Response Speed</h6>
+                        <p class="small opacity-75 mb-0">Dedicated surveyor assignment in under 20 mins</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded text-center h-100 card-trailtune">
+                        <div class="display-5 text-accent fw-bold mb-2">$0</div>
+                        <h6 class="mb-1">Advocate Fee For Members</h6>
+                        <p class="small opacity-75 mb-0">Complete legal claim support included free with policy</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Perk Feature Cards (Icon-Based, Clean & Modern) -->
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 border border-secondary rounded h-100 card-trailtune">
+                        <div class="perk-icon-box text-accent p-3 d-inline-block rounded mb-3 border border-secondary">
+                            <i data-lucide="user-check" size="28"></i>
+                        </div>
+                        <h5 class="mb-2">1-on-1 Claim Advocate</h5>
+                        <p class="small opacity-75 mb-0">Assigned a dedicated insurance advisor who handles surveyor meetings and fights for maximum payout.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 border border-secondary rounded h-100 card-trailtune">
+                        <div class="perk-icon-box text-accent p-3 d-inline-block rounded mb-3 border border-secondary">
+                            <i data-lucide="car" size="28"></i>
+                        </div>
+                        <h5 class="mb-2">Courtesy Car Allowance</h5>
+                        <p class="small opacity-75 mb-0">Receive a rental vehicle or taxi credit for up to 7 days while your car is being serviced in the garage.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 border border-secondary rounded h-100 card-trailtune">
+                        <div class="perk-icon-box text-accent p-3 d-inline-block rounded mb-3 border border-secondary">
+                            <i data-lucide="sparkles" size="28"></i>
+                        </div>
+                        <h5 class="mb-2">Zero-Depreciation Cover</h5>
+                        <p class="small opacity-75 mb-0">Get full reimbursement for plastic, rubber, and metal parts without standard age depreciation deductions.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="p-4 border border-secondary rounded h-100 card-trailtune">
+                        <div class="perk-icon-box text-accent p-3 d-inline-block rounded mb-3 border border-secondary">
+                            <i data-lucide="headset" size="28"></i>
+                        </div>
+                        <h5 class="mb-2">24/7 Spot Settlement</h5>
+                        <p class="small opacity-75 mb-0">Minor claims under $300 approved instantly on the spot via mobile video inspection within 30 minutes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="contact.html" class="btn btn-primary-trailtune btn-trailtune py-3 px-5">Get Personal Advocate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                        CarInsure<span class="text-accent">.</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Premium car insurance advisory platform. We specialize in helping you compare, renew, and save on vehicle insurance with a unified customer dashboard.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Compare Quotes</a></li>
+                        <li><a href="claims-assistance.html">Claims Support</a></li>
+                        <li><a href="partners.html">Insurance Partners</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Join Our Newsletter</h5>
+                    <p class="small opacity-75">Get the latest tips on saving on car insurance and early renewal offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control newsletter-input" placeholder="Email Address">
+                        <button class="btn btn-primary-trailtune" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p class="small mb-0 opacity-50">&copy; 2026 Car Insurance Renewal & Advisory Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scroll-top" title="Go to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

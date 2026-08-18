@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Car Insurance Dashboard</title>
+
+    <!-- CSS Frameworks & Plugins -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme auth-page">
+
+    <div class="auth-centered-container">
+        <!-- Floating Toggles for Demo Purposes -->
+        <div class="auth-toggles">
+            <button id="theme-toggle" class="btn btn-link p-0"><i data-lucide="sun"></i></button>
+            <button id="rtl-toggle" class="btn btn-link p-0"><i data-lucide="arrow-left-right"></i></button>
+        </div>
+
+        <div class="auth-card-centered text-start shadow-lg">
+            <div class="text-center mb-5">
+                <a class="navbar-brand d-inline-flex align-items-center mb-2" href="index.html">
+                    <i data-lucide="shield-check" class="me-2 text-accent" size="32"></i>
+                    CarInsure<span class="text-accent">.</span>
+                </a>
+                <h3 class="mb-1 mt-3">Welcome Back</h3>
+                <p class="small text-white-50">Log in to manage your policies and view renewal quotes.</p>
+            </div>
+
+            <form action="dashboard.html">
+                <div class="mb-4">
+                    <label class="form-label small  fw-bold opacity-75">Email Address</label>
+                    <input type="email" class="form-control newsletter-input py-2" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label small fw-bold opacity-75">Password</label>
+                    <div class="password-group">
+                        <input type="password" class="form-control newsletter-input py-2" id="password-input" placeholder="Enter your password" required>
+                        <i data-lucide="eye" class="password-toggle" id="toggle-password"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check mb-0">
+                        <input type="checkbox" class="form-check-input border-secondary bg-dark" id="remember-me">
+                        <label class="form-check-label small opacity-75" for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#" class="small text-accent text-decoration-none">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary-trailtune btn-trailtune w-100 py-3 mb-4">Login to Dashboard</button>
+            </form>
+
+            <div class="auth-divider">
+                <hr>
+                <span>OR CONTINUE WITH</span>
+            </div>
+
+            <div class="social-auth-btns">
+                <button type="button" class="social-btn"><i class="fab fa-google"></i></button>
+                <button type="button" class="social-btn"><i class="fab fa-apple"></i></button>
+            </div>
+
+            <p class="small text-center mt-5 mb-0 opacity-75">
+                Don't have an account? <a href="signup.html" class="text-accent fw-bold text-decoration-none auth-link-underline">Sign up for free</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+        
+        // Password Toggle Script for Auth Pages
+        const togglePassword = document.querySelector('#toggle-password');
+        const passwordInput = document.querySelector('#password-input');
+
+        if(togglePassword && passwordInput) {
+            togglePassword.addEventListener('click', function (e) {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                
+                if (type === 'password') {
+                    this.innerHTML = '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle>';
+                } else {
+                    this.innerHTML = '<path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path><line x1="2" x2="22" y1="2" y2="22"></line>';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

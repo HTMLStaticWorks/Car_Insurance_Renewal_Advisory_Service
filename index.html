@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Renewal & Advisory Service | Compare & Renew</title>
+    <meta name="description"
+        content="An insurance advisory platform helping car owners compare and renew vehicle insurance with a unified customer dashboard.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- CSS Frameworks & Plugins -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/advanced.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+
+            <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                CarInsure<span class="text-accent">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home <i data-lucide="chevron-down" size="14" class="ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item active" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="claims-assistance.html">Claims Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button id="theme-toggle" class="btn btn-link p-0 me-3"><i data-lucide="sun"></i></button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 me-3"><i data-lucide="arrow-left-right"></i></button>
+                    <a href="dashboard.html" class="btn btn-link p-0 me-3 text-white" title="Customer Dashboard"><i data-lucide="layout-grid"></i></a>
+                    <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative vh-100 d-flex align-items-center overflow-hidden">
+        <div class="gritty-overlay"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 z-index-0">
+            <!-- Using existing image, adjust later if needed -->
+            <img src="assets/images/hero-1-new.png" alt="Car Insurance" class="w-100 h-100 object-fit-cover opacity-100">
+        </div>
+        <div class="container z-index-2 text-center text-white">
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <div class="hero-content-wrapper">
+                        <h1 class="display-1 mb-3 text-white">Compare. <span class="text-accent">Renew.
+                                Save.</span></h1>
+                        <h2 class="h4 mb-4  fw-normal text-white">Your Dedicated Car Insurance Advisory Platform.
+                        </h2>
+                        <p class="lead mb-5 mx-auto text-white">Manage active policies, track renewal dates, compare renewal quotes, and receive premium reminders all in one secure customer dashboard.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
+                            <a href="login.html" class="btn btn-primary-trailtune btn-trailtune">Login to Dashboard</a>
+                            <a href="services.html" class="btn btn-outline-trailtune btn-trailtune">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="advanced-section">
+        <div class="container position-relative z-index-2">
+            <div class="row g-5 align-items-stretch">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                    <div class="advanced-card">
+                        <h6 class="text-accent mb-4 fw-bold text-uppercase" style="letter-spacing: 2px;">The Struggle</h6>
+                        <h2 class="h1 mb-5">Is Your Current Policy Costing Too Much?</h2>
+                        <ul class="list-unstyled">
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper danger"><i data-lucide="x" size="18"></i></div>
+                                <span class="opacity-75">Missing renewal dates and paying unnecessary penalties.</span>
+                            </li>
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper danger"><i data-lucide="x" size="18"></i></div>
+                                <span class="opacity-75">Overpaying for coverage and add-ons you don't actually need.</span>
+                            </li>
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper danger"><i data-lucide="x" size="18"></i></div>
+                                <span class="opacity-75">Confusing policy documents and hidden clauses.</span>
+                            </li>
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper danger"><i data-lucide="x" size="18"></i></div>
+                                <span class="opacity-75">Difficult claims process with no dedicated support.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="advanced-card advanced-card-accent">
+                        <h6 class="text-accent mb-4 fw-bold text-uppercase" style="letter-spacing: 2px;">The Solution</h6>
+                        <h2 class="h1 mb-5">Smart Insurance Management.</h2>
+                        <ul class="list-unstyled">
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper accent"><i data-lucide="check" size="18"></i></div>
+                                <span class="opacity-75">Upload existing policy details for a free coverage analysis.</span>
+                            </li>
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper accent"><i data-lucide="check" size="18"></i></div>
+                                <span class="opacity-75">Compare renewal quotes from top-rated insurers.</span>
+                            </li>
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper accent"><i data-lucide="check" size="18"></i></div>
+                                <span class="opacity-75">Track renewal dates and get automated premium reminders.</span>
+                            </li>
+                            <li class="advanced-list-item">
+                                <div class="icon-wrapper accent"><i data-lucide="check" size="18"></i></div>
+                                <span class="opacity-75">Select a plan and manage all documents in one dashboard.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Builds / Before & After -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">Results Matter</h6>
+                <h2 class="display-4">Real Customer Savings</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="card card-trailtune h-100">
+                        <img src="assets/images/INS1.png" class="card-img-top p-2 result-card-img" alt="Build 1">
+                        <div class="card-body">
+                            <h5 class="text-accent mb-2">Comprehensive Cover</h5>
+                            <p class="small mb-0"><strong>Issue:</strong> Paying too much for basic coverage.</p>
+                            <p class="small text-white"><strong>Result:</strong> Saved 20% on renewal with better benefits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-trailtune h-100">
+                        <img src="assets/images/INS2.png" class="card-img-top p-2 result-card-img" alt="Build 2">
+                        <div class="card-body">
+                            <h5 class="text-accent mb-2">Third-Party Plus</h5>
+                            <p class="small mb-0"><strong>Issue:</strong> Needed affordable coverage for an older car.</p>
+                            <p class="small text-white"><strong>Result:</strong> Found a customized plan fitting their exact budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-trailtune h-100">
+                        <img src="assets/images/imag1.png" class="card-img-top p-2 result-card-img" alt="Build 3">
+                        <div class="card-body">
+                            <h5 class="text-accent mb-2">Zero Depreciation</h5>
+                            <p class="small mb-0"><strong>Issue:</strong> Confused about which add-ons to select.</p>
+                            <p class="small text-white"><strong>Result:</strong> Clear advisory leading to full protection without overpaying.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Highlights Grid -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">What We Do</h6>
+                <h2 class="display-4">Advisory Services</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-trailtune service-card h-100 overflow-hidden">
+                        <img src="assets/images/fork-service.jpg" class="card-img-top p-2" alt="Compare Quotes"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="mb-3">Compare Quotes</h4>
+                            <p class="small opacity-75">Review and compare insurance plans from top industry providers.
+                            </p>
+                            <a href="services.html" class="mt-auto text-accent fw-bold small">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-trailtune service-card h-100 overflow-hidden">
+                        <img src="assets/images/shock.jpg" class="card-img-top p-2" alt="Policy Management"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="mb-3">Policy Management</h4>
+                            <p class="small opacity-75">Upload your existing policy details and manage documents securely.</p>
+                            <a href="login.html" class="mt-auto text-accent fw-bold small">Dashboard &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-trailtune service-card h-100 overflow-hidden">
+                        <img src="assets/images/custom-tuning.jpg" class="card-img-top p-2" alt="Renewal Reminders"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="mb-3">Renewal Reminders</h4>
+                            <p class="small opacity-75">Track renewal dates easily and receive automated premium reminders.
+                            </p>
+                            <a href="services.html" class="mt-auto text-accent fw-bold small">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card card-trailtune service-card h-100 overflow-hidden">
+                        <img src="assets/images/spring.jpg" class="card-img-top p-2" alt="Claims Assistance"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="mb-3">Claims Assistance</h4>
+                            <p class="small opacity-75">Get expert help guiding you through the claims process smoothly.</p>
+                            <a href="contact.html" class="mt-auto text-accent fw-bold small">Contact Us &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bg-dark-section py-5 border-bottom border-secondary">
+        <div class="container py-4">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent mb-2">THE PROCESS</h6>
+                <h2 class="display-4 mb-3">How It Works</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 620px;">Renew your car insurance or switch carriers in four simple, transparent steps.</p>
+            </div>
+            
+            <div class="row g-4 text-center position-relative">
+                <!-- Step 1 -->
+                <div class="col-lg-3 col-md-6 step-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="step-line d-none d-lg-block"></div>
+                    <div class="step-badge-circle mx-auto mb-4 d-flex align-items-center justify-content-center">01</div>
+                    <h4 class="mb-2">Upload Policy</h4>
+                    <p class="small opacity-75 mb-0">Share your existing insurance details securely through your dashboard.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-lg-3 col-md-6 step-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="step-line d-none d-lg-block"></div>
+                    <div class="step-badge-circle mx-auto mb-4 d-flex align-items-center justify-content-center">02</div>
+                    <h4 class="mb-2">Compare Quotes</h4>
+                    <p class="small opacity-75 mb-0">Review customized renewal quotes from 20+ top insurance providers.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-lg-3 col-md-6 step-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-line d-none d-lg-block"></div>
+                    <div class="step-badge-circle mx-auto mb-4 d-flex align-items-center justify-content-center">03</div>
+                    <h4 class="mb-2">Select Plan</h4>
+                    <p class="small opacity-75 mb-0">Choose the best coverage for your needs and instantly apply online.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-lg-3 col-md-6 step-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="step-badge-circle mx-auto mb-4 d-flex align-items-center justify-content-center">04</div>
+                    <h4 class="mb-2">Drive Safely</h4>
+                    <p class="small opacity-75 mb-0">Manage documents and track future renewals directly from your dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h6 class="text-accent">FAQ</h6>
+                        <h2 class="display-4">Common Questions</h2>
+                    </div>
+                    <div class="accordion accordion-flush bg-transparent border-top" id="faqAccordion">
+                        <div class="accordion-item bg-transparent border-bottom border-secondary" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent py-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do I need to create an account?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, creating an account gives you access to our customer dashboard where you can upload existing policy details, compare renewal quotes, select a plan, and manage policy documents securely.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white py-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Which insurers do you compare?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We partner with all major, top-rated car insurance providers to ensure you receive a comprehensive range of competitive quotes tailored to your vehicle and needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white py-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Is the advisory service free?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, comparing quotes and using our platform is completely free. We aim to help you find the best coverage without any hidden consultation fees.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white py-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How do I upload my policy?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Simply log into your customer dashboard and use the document upload feature. Our system will securely store your details and use them to generate accurate renewal quotes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white py-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Will I get renewal reminders?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, our platform automatically tracks your renewal dates and sends you premium reminders via email and SMS before your policy expires, ensuring you never miss a deadline.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white py-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Can I manage multiple vehicles?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. You can add and track policies for all your vehicles in one unified dashboard, making it easy to manage your entire family's or fleet's insurance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                        CarInsure<span class="text-accent">.</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Premium car insurance advisory platform. We specialize in helping you compare, renew, and save on vehicle insurance with a unified customer dashboard.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Compare Quotes</a></li>
+                        <li><a href="login.html">Policy Management</a></li>
+                        <li><a href="services.html">Renewal Reminders</a></li>
+                        <li><a href="contact.html">Claims Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Join Our Newsletter</h5>
+                    <p class="small opacity-75">Get the latest tips on saving on car insurance and early renewal offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control newsletter-input" placeholder="Email Address">
+                        <button class="btn btn-primary-trailtune" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p class="small mb-0 opacity-90">&copy; 2026 Car Insurance Renewal & Advisory Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scroll-top" title="Go to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

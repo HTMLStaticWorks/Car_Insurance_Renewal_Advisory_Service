@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Car Insurance Renewal & Advisory Service</title>
+
+    <!-- CSS Frameworks & Plugins -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+
+            <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                CarInsure<span class="text-accent">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home <i data-lucide="chevron-down" size="14" class="ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="claims-assistance.html">Claims Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button id="theme-toggle" class="btn btn-link p-0 me-3"><i data-lucide="sun"></i></button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 me-3"><i data-lucide="arrow-left-right"></i></button>
+                    <a href="dashboard.html" class="btn btn-link p-0 me-3 text-white" title="Customer Dashboard"><i data-lucide="layout-grid"></i></a>
+                    <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-accent py-5">
+        <div class="container text-center">
+            <h6 class="text-white" data-aos="fade-up">Service Menu</h6>
+            <h1 class="display-3 text-white" data-aos="fade-up" data-aos-delay="100">Comprehensive Coverage Support.</h1>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="py-5 bg-black border-bottom border-secondary">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up">
+                <button class="btn btn-outline-trailtune active" data-filter="all">All Services</button>
+                <button class="btn btn-outline-trailtune" data-filter="advisory">Advisory & Quotes</button>
+                <button class="btn btn-outline-trailtune" data-filter="management">Policy Management</button>
+                <button class="btn btn-outline-trailtune" data-filter="claims">Claims Support</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Grid -->
+    <section>
+        <div class="container">
+            <div class="row g-4">
+                <!-- Comprehensive Policy Review -->
+                <div class="col-lg-4 col-md-6 service-item advisory" data-aos="fade-up">
+                    <div class="card card-trailtune service-card h-100">
+                        <img src="assets/images/service1.jpg" alt="Policy Review" class="card-img-top p-2">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h4 class="mb-0">Comprehensive Policy Review</h4>
+                                <span class="badge bg-accent">Free Analysis</span>
+                            </div>
+                            <p class="small opacity-75 mb-4">Complete breakdown of your existing policy to find gaps in coverage and opportunities for savings.</p>
+                            <ul class="list-unstyled small mb-4">
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Upload existing documents</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Expert advisor assessment</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Unbiased recommendations</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="h4 mb-0">Free</span>
+                                <a href="login.html"
+                                    class="btn btn-primary-trailtune btn-trailtune btn-sm">Start Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote Comparison -->
+                <div class="col-lg-4 col-md-6 service-item advisory" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-trailtune service-card h-100">
+                        <img src="assets/images/service2.jpg" alt="Quote Comparison" class="card-img-top p-2">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h4 class="mb-0">Quote Comparison</h4>
+                                <span class="badge bg-accent">Instant</span>
+                            </div>
+                            <p class="small opacity-75 mb-4">Compare tailored quotes from multiple top-rated insurers in one easy-to-read dashboard view.</p>
+                            <ul class="list-unstyled small mb-4">
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Side-by-side rate display</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Custom coverage limits</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Transparent fee structure</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="h4 mb-0">Included</span>
+                                <a href="login.html"
+                                    class="btn btn-primary-trailtune btn-trailtune btn-sm">Get Quotes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Automated Renewals -->
+                <div class="col-lg-4 col-md-6 service-item management" data-aos="fade-up">
+                    <div class="card card-trailtune service-card h-100">
+                        <img src="assets/images/service3.jpg" alt="Automated Renewals" class="card-img-top p-2">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h4 class="mb-0">Automated Renewals</h4>
+                                <span class="badge bg-secondary">Year-Round</span>
+                            </div>
+                            <p class="small opacity-75 mb-4">Never miss a renewal date again. Our system tracks your policy and alerts you before it expires.</p>
+                            <ul class="list-unstyled small mb-4">
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Email & SMS Reminders</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Pre-renewal rate checks</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Easy 1-click renewal</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="h4 mb-0">Standard</span>
+                                <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Document Vault -->
+                <div class="col-lg-4 col-md-6 service-item management" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-trailtune service-card h-100">
+                        <img src="assets/images/ser4.png" alt="Document Vault" class="card-img-top p-2">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h4 class="mb-0">Document Vault</h4>
+                                <span class="badge bg-secondary">Secure</span>
+                            </div>
+                            <p class="small opacity-75 mb-4">Store your digital ID cards, policy documents, and history in a centralized, secure dashboard.</p>
+                            <ul class="list-unstyled small mb-4">
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Bank-grade encryption</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> 24/7 Mobile Access</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Easy document sharing</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="h4 mb-0">Included</span>
+                                <a href="login.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Access</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Claims Assistance -->
+                <div class="col-lg-4 col-md-6 service-item claims" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-trailtune service-card h-100">
+                        <img src="assets/images/service5.jpg" alt="Claims Assistance" class="card-img-top p-2">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h4 class="mb-0">Claims Assistance</h4>
+                                <span class="badge bg-forest-green">Priority</span>
+                            </div>
+                            <p class="small opacity-75 mb-4">Filing a claim is stressful. Our advisors will guide you through the process step-by-step.</p>
+                            <ul class="list-unstyled small mb-4">
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Evidence collection guide</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Direct insurer liaison</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Settlement review</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="h4 mb-0">Premium</span>
+                                <a href="pricing.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Upgrade</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Roadside & Towing Support -->
+                <div class="col-lg-4 col-md-6 service-item claims" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-trailtune service-card h-100">
+                        <img src="assets/images/servic1.png" alt="Roadside & Towing Support" class="card-img-top p-2">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h4 class="mb-0">Roadside & Towing</h4>
+                                <span class="badge bg-accent">24/7 Support</span>
+                            </div>
+                            <p class="small opacity-75 mb-4">Instant emergency roadside assistance, towing dispatch, battery jumpstarts, and flat tire support.</p>
+                            <ul class="list-unstyled small mb-4">
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> 24/7 Towing Dispatch</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Battery Jumpstart & Fuel</li>
+                                <li class="mb-2"><i data-lucide="check" class="text-accent me-2" size="16"></i> Cashless garage coverage</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="h4 mb-0">Included</span>
+                                <a href="claims-assistance.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Get Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="bg-dark-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-accent">Which Service Do I Need?</h6>
+                <h2>Basic Dashboard vs Premium Advisory</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-dark table-bordered border-secondary text-center">
+                    <thead>
+                        <tr class="bg-dark">
+                            <th class="py-4">Feature</th>
+                            <th class="py-4">Basic Dashboard</th>
+                            <th class="py-4 text-accent">Premium Advisory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3">Quote Comparison</td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Document Vault</td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Renewal Reminders</td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Dedicated Claims Liaison</td>
+                            <td class="py-3 text-danger"><i data-lucide="x"></i></td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">1-on-1 Policy Review Call</td>
+                            <td class="py-3 text-danger"><i data-lucide="x"></i></td>
+                            <td class="py-3 text-success"><i data-lucide="check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Service Benefits -->
+    <section class="py-5 bg-black border-top border-secondary">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <i data-lucide="shield-check" class="text-accent mb-3" size="40"></i>
+                    <h5>Unbiased Advice</h5>
+                    <p class="small opacity-50 mb-0">We work for you, not the insurance companies.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="search" class="text-accent mb-3" size="40"></i>
+                    <h5>Transparent Rates</h5>
+                    <p class="small opacity-50 mb-0">See exactly what you're paying for with clear breakdowns.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="clock" class="text-accent mb-3" size="40"></i>
+                    <h5>Fast Setup</h5>
+                    <p class="small opacity-50 mb-0">Upload documents and get quotes in under 10 minutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                        CarInsure<span class="text-accent">.</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Premium car insurance advisory platform. We specialize in helping you compare, renew, and save on vehicle insurance with a unified customer dashboard.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Compare Quotes</a></li>
+                        <li><a href="login.html">Policy Management</a></li>
+                        <li><a href="services.html">Renewal Reminders</a></li>
+                        <li><a href="contact.html">Claims Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Join Our Newsletter</h5>
+                    <p class="small opacity-75">Get the latest tips on saving on car insurance and early renewal offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control newsletter-input" placeholder="Email Address">
+                        <button class="btn btn-primary-trailtune" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p class="small mb-0 opacity-50">&copy; 2026 Car Insurance Renewal & Advisory Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scroll-top" title="Go to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Simple Filter Logic
+        const filterBtns = document.querySelectorAll('[data-filter]');
+        const items = document.querySelectorAll('.service-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                items.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

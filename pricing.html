@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans | Car Insurance Renewal & Advisory Service</title>
+
+    <!-- CSS Frameworks & Plugins -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+
+            <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                CarInsure<span class="text-accent">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home <i data-lucide="chevron-down" size="14" class="ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="claims-assistance.html">Claims Help</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button id="theme-toggle" class="btn btn-link p-0 me-3"><i data-lucide="sun"></i></button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 me-3"><i data-lucide="arrow-left-right"></i></button>
+                    <a href="dashboard.html" class="btn btn-link p-0 me-3 text-white" title="Customer Dashboard"><i data-lucide="layout-grid"></i></a>
+                    <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-accent py-5">
+        <div class="container text-center">
+            <h6 class="text-white" data-aos="fade-up">Transparent Pricing</h6>
+            <h1 class="display-3 text-white" data-aos="fade-up" data-aos-delay="100">Advisory Tiers & Plans</h1>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Basic Care -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="card card-trailtune p-5 text-center h-100">
+                        <h4 class=" mb-4">Self Service</h4>
+                        <div class="h1 mb-4">Free</div>
+                        <p class="small opacity-75 mb-5">Ideal for individuals looking to compare quotes on their own and manage basic policy documents.</p>
+                        <ul class="list-unstyled text-start mb-5">
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Free Quote Comparisons</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Document Upload Vault</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Automated Renewal Reminders</li>
+                            <li class="mb-3"><i data-lucide="minus" class="opacity-25 me-2"></i> No Dedicated Advisor</li>
+                        </ul>
+                        <a href="signup.html" class="btn btn-outline-trailtune btn-trailtune mt-auto">Start Free</a>
+                    </div>
+                </div>
+                <!-- Full Rebuild -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-trailtune p-5 text-center h-100 border-accent">
+                        <div class="badge bg-accent position-absolute top-0 start-50 translate-middle">MOST POPULAR
+                        </div>
+                        <h4 class=" mb-4">Premium Advisory</h4>
+                        <div class="h1 mb-4"><span class="text-accent">$120</span> <span class="fs-5 opacity-50">/yr</span></div>
+                        <p class="small opacity-75 mb-5">The complete package. Get dedicated support, claims assistance, and comprehensive policy reviews.</p>
+                        <ul class="list-unstyled text-start mb-5">
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Everything in Self Service</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Annual 1-on-1 Policy Review</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Priority Claims Assistance</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Direct Insurer Liaison Support</li>
+                        </ul>
+                        <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune mt-auto">Get Premium</a>
+                    </div>
+                </div>
+                <!-- Race Prep -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-trailtune p-5 text-center h-100">
+                        <h4 class=" mb-4">Fleet Management</h4>
+                        <div class="h1 mb-4">From <span class="text-accent">$499</span> <span class="fs-5 opacity-50">/yr</span></div>
+                        <p class="small opacity-75 mb-5">For families or businesses with multiple vehicles. Custom solutions and bulk management.</p>
+                        <ul class="list-unstyled text-start mb-5">
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Everything in Premium</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Up to 10 Vehicles Managed</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Consolidated Billing View</li>
+                            <li class="mb-3"><i data-lucide="check" class="text-accent me-2"></i> Quarterly Cost Analysis</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-trailtune btn-trailtune mt-auto">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spring Rate Calculator Widget -> Coverage Estimator -->
+    <section class="bg-dark-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h6 class="text-accent">Tech Tools</h6>
+                    <h2 class="display-4 mb-4">Coverage Needs Calculator</h2>
+                    <p class="mb-5">Not sure how much coverage you actually need? Use our technical calculator to find your ideal starting point for deductibles and liability limits.</p>
+                    <form id="spring-rate-calc" class="p-4 border border-secondary">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small  opacity-50">Vehicle Value</label>
+                                <input type="number" class="form-control newsletter-input" value="25000">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small  opacity-50">Annual Mileage</label>
+                                <select class="form-select newsletter-input">
+                                    <option value="low">Under 10,000 miles</option>
+                                    <option value="med" selected>10,000 - 15,000 miles</option>
+                                    <option value="high">Over 15,000 miles</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small  opacity-50">Vehicle Type</label>
+                                <select class="form-select newsletter-input">
+                                    <option value="sedan">Sedan</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="truck">Truck / Van</option>
+                                    <option value="luxury">Luxury / Sports</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small  opacity-50">Primary Use</label>
+                                <select class="form-select newsletter-input">
+                                    <option value="commute">Daily Commute</option>
+                                    <option value="pleasure" selected>Pleasure / Weekend</option>
+                                    <option value="business">Business / Rideshare</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="p-5 border border-accent h-100 d-flex flex-column justify-content-center">
+                        <h4 class="mb-5 text-center">RECOMMENDED SETUP</h4>
+                        <div class="row text-center g-4">
+                            <div class="col-md-4">
+                                <h6 class="small opacity-50 ">Deductible</h6>
+                                <h2 class="text-accent">$500</h2>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <h6 class="small opacity-50 ">Liability</h6>
+                                <h2 class="text-accent">100/300</h2>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <h6 class="small opacity-50 ">Comprehensive</h6>
+                                <h2 class="text-accent">Yes</h2>
+                            </div>
+                        </div>
+                        <p class="small text-center mt-5 opacity-50">Note: These are baseline recommendations. Optimal setup varies by state requirements and personal risk tolerance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Unique Section 1: Flexible Policy Add-Ons & Modular Protection Riders -->
+    <section class="py-5 bg-black border-top border-secondary">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">MODULAR RIDER OPTIONS</h6>
+                <h2 class="display-5 mb-3">Customize Your Protection with Add-On Riders</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 680px;">Mix and match specialized coverage riders to protect your vehicle against specific road risks.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Add-on 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="card card-trailtune h-100 p-4 border border-secondary text-center">
+                        <div class="text-accent mb-3">
+                            <i data-lucide="shield-check" size="36"></i>
+                        </div>
+                        <h5 class="mb-2">Zero-Depreciation</h5>
+                        <div class="h4 text-accent mb-3">+$25 <span class="fs-6 opacity-50">/yr</span></div>
+                        <p class="small opacity-75 mb-0">Receive 100% full replacement value for bumper, plastic, rubber, and metal parts without age depreciation deductions.</p>
+                    </div>
+                </div>
+
+                <!-- Add-on 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="card card-trailtune h-100 p-4 border border-secondary text-center">
+                        <div class="text-accent mb-3">
+                            <i data-lucide="zap" size="36"></i>
+                        </div>
+                        <h5 class="mb-2">Engine & Gearbox</h5>
+                        <div class="h4 text-accent mb-3">+$35 <span class="fs-6 opacity-50">/yr</span></div>
+                        <p class="small opacity-75 mb-0">Protects against water ingress, hydrostatic lock during floods, and internal gearbox oil leakage damage.</p>
+                    </div>
+                </div>
+
+                <!-- Add-on 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="card card-trailtune h-100 border border-accent rounded p-4 text-center">
+                        <div class="badge bg-accent mb-2 w-auto mx-auto px-2 py-1">BEST SELLER</div>
+                        <div class="text-accent mb-3">
+                            <i data-lucide="life-buoy" size="36"></i>
+                        </div>
+                        <h5 class="mb-2">24/7 Roadside Towing</h5>
+                        <div class="h4 text-accent mb-3">+$19 <span class="fs-6 opacity-50">/yr</span></div>
+                        <p class="small opacity-75 mb-0">Nationwide 24/7 towing, emergency flat tire replacement, fuel delivery, and battery jumpstart support.</p>
+                    </div>
+                </div>
+
+                <!-- Add-on 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div class="card card-trailtune h-100 p-4 border border-secondary text-center">
+                        <div class="text-accent mb-3">
+                            <i data-lucide="award" size="36"></i>
+                        </div>
+                        <h5 class="mb-2">NCB Protect Rider</h5>
+                        <div class="h4 text-accent mb-3">+$20 <span class="fs-6 opacity-50">/yr</span></div>
+                        <p class="small opacity-75 mb-0">Retain your 50% No-Claim Bonus discount tier even if you file 1 minor claim during the policy year.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Section 2: Price Match Guarantee & Transparent Advisory FAQ -->
+    <section class="py-5 bg-dark-section border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-center g-5 mb-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="p-4 border border-accent rounded bg-black">
+                        <div class="d-flex align-items-center mb-3">
+                            <i data-lucide="badge-percent" class="text-accent me-3" size="40"></i>
+                            <div>
+                                <h6 class="text-accent mb-0">100% LOWEST RATE GUARANTEE</h6>
+                                <h4 class="mb-0">Price Match Promise</h4>
+                            </div>
+                        </div>
+                        <p class="small opacity-75 mb-4">Find a lower quote for the exact same coverage from any verified carrier? We will match the price and throw in free 1-year claims legal advocacy support.</p>
+                        <a href="contact.html" class="btn btn-primary-trailtune w-100 py-3">Submit Competitor Quote</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <h6 class="text-accent mb-2">CLEAR ANSWERS</h6>
+                    <h2 class="display-6 mb-4">Pricing & Plan FAQs</h2>
+
+                    <div class="accordion" id="pricingFAQ">
+                        <div class="accordion-item bg-black border border-secondary mb-3 rounded overflow-hidden">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button bg-black text-white collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    <strong>Are there any hidden fees or commission markups?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body opacity-75 pt-0 px-4 pb-4">
+                                    No hidden fees! Our platform rates are identical to or lower than direct carrier rates because we negotiate volume group discounts with our 20+ partner underwriters.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-black border border-secondary mb-3 rounded overflow-hidden">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button bg-black text-white collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    <strong>Can I transfer my existing No-Claim Bonus (NCB)?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body opacity-75 pt-0 px-4 pb-4">
+                                    Yes! Your NCB discount (up to 50%) is tied to you as a driver, not your old vehicle or insurer. We seamlessly transfer your full NCB discount during renewal.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-black border border-secondary mb-3 rounded overflow-hidden">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button bg-black text-white collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    <strong>What happens if I sell or change my car mid-policy?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body opacity-75 pt-0 px-4 pb-4">
+                                    Our support team issues an instant policy endorsement transfer to your new vehicle within 24 hours at zero administration fee.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <i data-lucide="shield-check" class="me-2 text-accent"></i>
+                        CarInsure<span class="text-accent">.</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Premium car insurance advisory platform. We specialize in helping you compare, renew, and save on vehicle insurance with a unified customer dashboard.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Compare Quotes</a></li>
+                        <li><a href="login.html">Policy Management</a></li>
+                        <li><a href="services.html">Renewal Reminders</a></li>
+                        <li><a href="contact.html">Claims Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Join Our Newsletter</h5>
+                    <p class="small opacity-75">Get the latest tips on saving on car insurance and early renewal offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control newsletter-input" placeholder="Email Address">
+                        <button class="btn btn-primary-trailtune" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p class="small mb-0 opacity-50">&copy; 2026 Car Insurance Renewal & Advisory Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scroll-top" title="Go to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
