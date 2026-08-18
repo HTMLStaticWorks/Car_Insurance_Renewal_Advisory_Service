@@ -400,6 +400,85 @@ body.light-theme .dash-card[style*="linear-gradient"] {
     background: #FFFFFF !important;
 }
 
+/* Light Theme Dashboard Tables */
+body.light-theme .dash-card table,
+body.light-theme .dash-card .table {
+    background-color: #FFFFFF !important;
+    color: #1E293B !important;
+}
+
+body.light-theme .dash-card table thead,
+body.light-theme .dash-card .table thead,
+body.light-theme .dash-card table thead tr,
+body.light-theme .dash-card .table thead tr {
+    background-color: #F8FAFC !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+body.light-theme .dash-card table th,
+body.light-theme .dash-card .table th {
+    color: #475569 !important;
+    font-weight: 700 !important;
+    background-color: #F8FAFC !important;
+}
+
+body.light-theme .dash-card table td,
+body.light-theme .dash-card .table td {
+    color: #1E293B !important;
+    border-bottom-color: #E2E8F0 !important;
+    background-color: #FFFFFF !important;
+}
+
+body.light-theme .dash-card table td.opacity-75,
+body.light-theme .dash-card table td.text-white,
+body.light-theme .dash-card table td.opacity-90 {
+    color: #475569 !important;
+}
+
+body.light-theme .dash-card table .btn-outline-secondary,
+body.light-theme .dash-card table .btn-outline-light {
+    color: #334155 !important;
+    border-color: #CBD5E1 !important;
+    background-color: #FFFFFF !important;
+}
+
+body.light-theme .dash-card table .btn-outline-secondary:hover,
+body.light-theme .dash-card table .btn-outline-light:hover {
+    background-color: #2563EB !important;
+    border-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+/* Dashboard Light Theme Input Styles */
+body.light-theme .dash-card .form-control,
+body.light-theme .dash-card .form-select,
+body.light-theme .dash-input {
+    background-color: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    color: #1E293B !important;
+}
+
+body.light-theme .dash-card .form-control:focus,
+body.light-theme .dash-card .form-select:focus,
+body.light-theme .dash-input:focus {
+    background-color: #FFFFFF !important;
+    border-color: #2563EB !important;
+    color: #1E293B !important;
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.15) !important;
+}
+
+body.light-theme .dash-card label,
+body.light-theme.dashboard-page label {
+    color: #334155 !important;
+    font-weight: 600 !important;
+}
+
+body.light-theme .badge.bg-primary,
+body.light-theme span.badge.bg-primary {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
 body.light-theme .action-item {
     background-color: #FFFFFF !important;
     border: 1px solid #E2E8F0 !important;
@@ -438,4 +517,9 @@ body.light-theme .topbar-icon:hover {
 body.light-theme .user-avatar {
     background-color: #2563EB !important;
     color: #FFFFFF !important;
+}
+
+body.light-theme input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: none !important;
+    opacity: 0.75 !important;
 }

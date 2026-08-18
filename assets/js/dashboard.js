@@ -115,4 +115,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // -------------------------------------------------------
+    // Profile & Settings Handlers
+    // -------------------------------------------------------
+    const profileForm = document.getElementById('profile-form');
+    if (profileForm) {
+        profileForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Profile details updated successfully!');
+        });
+    }
+
+    const saveSettingsBtn = document.getElementById('save-settings-btn');
+    if (saveSettingsBtn) {
+        saveSettingsBtn.addEventListener('click', function () {
+            alert('Account and advisory settings saved!');
+        });
+    }
+
 });

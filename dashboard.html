@@ -31,7 +31,7 @@
         <div class="topbar-icon" id="theme-toggle" title="Toggle Theme"><i data-lucide="sun" size="18"></i></div>
         <div class="topbar-icon" id="rtl-toggle" title="Toggle RTL"><i data-lucide="arrow-left-right" size="18"></i></div>
         <div class="topbar-icon" title="Notifications"><i data-lucide="bell" size="18"></i></div>
-        <div class="user-avatar" title="Profile">S</div>
+        <div class="user-avatar sidebar-link p-0 d-flex align-items-center justify-content-center" data-target="view-profile" style="cursor: pointer;" title="Profile">S</div>
     </div>
 
     <div class="dashboard-layout">
@@ -40,7 +40,7 @@
             <div class="sidebar-header">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <i data-lucide="shield-check" class="me-2 text-accent"></i>
-                    CarInsure
+                    CarInsure.<span class="text-accent"></span>
                 </a>
             </div>
 
@@ -70,11 +70,11 @@
 
                 <div class="sidebar-section-title mt-4">ACCOUNT</div>
                 
-                <a href="#" class="sidebar-link">
+                <a href="#" class="sidebar-link" data-target="view-profile">
                     <i data-lucide="user" size="18"></i>
                     <span>Profile</span>
                 </a>
-                <a href="#" class="sidebar-link">
+                <a href="#" class="sidebar-link" data-target="view-settings">
                     <i data-lucide="settings" size="18"></i>
                     <span>Settings</span>
                 </a>
@@ -360,30 +360,30 @@
                         <table class="table table-dark table-hover mb-0" style="background: transparent;">
                             <thead style="background: rgba(255,255,255,0.05);">
                                 <tr>
-                                    <th class="py-3 px-4 text-uppercase small opacity-75 border-0">Vehicle</th>
-                                    <th class="py-3 px-4 text-uppercase small opacity-75 border-0">Provider</th>
-                                    <th class="py-3 px-4 text-uppercase small opacity-75 border-0">Policy No</th>
-                                    <th class="py-3 px-4 text-uppercase small opacity-75 border-0">Expiry</th>
-                                    <th class="py-3 px-4 text-uppercase small opacity-75 border-0">Status</th>
+                                    <th class="py-3 px-4 text-uppercase small text-white opacity-75 border-0">Vehicle</th>
+                                    <th class="py-3 px-4 text-uppercase small text-white opacity-75 border-0">Provider</th>
+                                    <th class="py-3 px-4 text-uppercase small text-white opacity-75 border-0">Policy No</th>
+                                    <th class="py-3 px-4 text-uppercase small text-white opacity-75 border-0">Expiry</th>
+                                    <th class="py-3 px-4 text-uppercase small text-white opacity-75 border-0">Status</th>
                                     <th class="py-3 px-4 border-0"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="py-3 px-4 align-middle fw-bold">2021 Tesla Model 3</td>
-                                    <td class="py-3 px-4 align-middle">Titan Shield</td>
-                                    <td class="py-3 px-4 align-middle opacity-75">POL-9823-TS</td>
+                                    <td class="py-3 px-4 align-middle fw-bold text-white">2021 Tesla Model 3</td>
+                                    <td class="py-3 px-4 align-middle text-white opacity-90">Titan Shield</td>
+                                    <td class="py-3 px-4 align-middle text-white opacity-75">POL-9823-TS</td>
                                     <td class="py-3 px-4 align-middle text-warning">Oct 12, 2026</td>
                                     <td class="py-3 px-4 align-middle"><span class="badge bg-warning text-dark">Expiring</span></td>
-                                    <td class="py-3 px-4 align-middle text-end"><button class="btn btn-sm btn-outline-secondary">View</button></td>
+                                    <td class="py-3 px-4 align-middle text-end"><button class="btn btn-sm btn-outline-light">View</button></td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3 px-4 align-middle fw-bold">2019 Toyota RAV4</td>
-                                    <td class="py-3 px-4 align-middle">Global Direct</td>
-                                    <td class="py-3 px-4 align-middle opacity-75">POL-4412-GD</td>
-                                    <td class="py-3 px-4 align-middle">Mar 05, 2027</td>
+                                    <td class="py-3 px-4 align-middle fw-bold text-white">2019 Toyota RAV4</td>
+                                    <td class="py-3 px-4 align-middle text-white opacity-90">Global Direct</td>
+                                    <td class="py-3 px-4 align-middle text-white opacity-75">POL-4412-GD</td>
+                                    <td class="py-3 px-4 align-middle text-white opacity-90">Mar 05, 2027</td>
                                     <td class="py-3 px-4 align-middle"><span class="badge bg-success bg-opacity-10 text-success">Active</span></td>
-                                    <td class="py-3 px-4 align-middle text-end"><button class="btn btn-sm btn-outline-secondary">View</button></td>
+                                    <td class="py-3 px-4 align-middle text-end"><button class="btn btn-sm btn-outline-light">View</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -407,6 +407,134 @@
                     <h4 class="text-white fw-bold mb-2">No Active Claims</h4>
                     <p class="opacity-75 text-white mb-4">You currently have no open claims. Drive safe!</p>
                     <button class="btn btn-outline-secondary text-white px-4">File a New Claim</button>
+                </div>
+            </div>
+
+            <!-- View: Profile -->
+            <div id="view-profile" class="dash-view d-none">
+                <div class="mb-5" data-aos="fade-up">
+                    <h2 class="text-white fw-bold mb-1">User Profile</h2>
+                    <p class="opacity-75 text-white">Manage your personal information and registered driver details.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="dash-card text-center p-4">
+                            <div class="user-avatar mx-auto mb-3 d-flex align-items-center justify-content-center fw-bold" style="width: 80px; height: 80px; font-size: 2rem;">S</div>
+                            <h4 class="text-white fw-bold mb-1">Sarah Jenkins</h4>
+                            <p class="small opacity-75 text-white mb-3">sarah.jenkins@example.com</p>
+                            <span class="badge bg-primary text-white px-3 py-2 fw-bold">Premium Member</span>
+                            <hr class="my-4 border-secondary opacity-25">
+                            <div class="text-start">
+                                <div class="d-flex justify-content-between mb-2 small">
+                                    <span class="opacity-75 text-white">Active Policies:</span>
+                                    <span class="fw-bold text-white">2 Vehicles</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2 small">
+                                    <span class="opacity-75 text-white">Member Since:</span>
+                                    <span class="fw-bold text-white">Jan 2024</span>
+                                </div>
+                                <div class="d-flex justify-content-between small">
+                                    <span class="opacity-75 text-white">No-Claim Bonus:</span>
+                                    <span class="fw-bold text-success">35% NCB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="dash-card p-4">
+                            <h5 class="text-white fw-bold mb-4">Personal Information</h5>
+                            <form id="profile-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-white opacity-75">Full Name</label>
+                                        <input type="text" class="form-control dash-input" value="Sarah Jenkins" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-white opacity-75">Email Address</label>
+                                        <input type="email" class="form-control dash-input" value="sarah.jenkins@example.com" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-white opacity-75">Phone Number</label>
+                                        <input type="tel" class="form-control dash-input" value="+1 (555) 234-5678">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-white opacity-75">Driver's License No.</label>
+                                        <input type="text" class="form-control dash-input" value="DL-9842104-NY">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small text-white opacity-75">Residential Address</label>
+                                        <input type="text" class="form-control dash-input" value="742 Evergreen Terrace, New York, NY 10001">
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-primary px-4 py-2 fw-bold">Save Profile Changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View: Settings -->
+            <div id="view-settings" class="dash-view d-none">
+                <div class="mb-5" data-aos="fade-up">
+                    <h2 class="text-white fw-bold mb-1">Account & Advisory Settings</h2>
+                    <p class="opacity-75 text-white">Customize notifications, security settings, and advisory preferences.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="dash-card p-4 h-100">
+                            <h5 class="text-white fw-bold mb-4"><i data-lucide="bell" class="me-2 text-primary"></i> Notification Preferences</h5>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="notify-renewal" checked>
+                                <label class="form-check-label text-white small ms-2" for="notify-renewal">
+                                    <strong>Renewal Date Reminders</strong>
+                                    <span class="d-block opacity-75">Receive email and SMS 30 days before policy expiry.</span>
+                                </label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="notify-quotes" checked>
+                                <label class="form-check-label text-white small ms-2" for="notify-quotes">
+                                    <strong>Rate Drop & Quote Alerts</strong>
+                                    <span class="d-block opacity-75">Get notified when a competitor offers lower rates.</span>
+                                </label>
+                            </div>
+                            <div class="form-check form-switch mb-4">
+                                <input class="form-check-input" type="checkbox" id="notify-claims">
+                                <label class="form-check-label text-white small ms-2" for="notify-claims">
+                                    <strong>Claims Status Updates</strong>
+                                    <span class="d-block opacity-75">Real-time alerts on claim progress and surveyor meetings.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="dash-card p-4 h-100">
+                            <h5 class="text-white fw-bold mb-4"><i data-lucide="shield" class="me-2 text-primary"></i> Security & Authentication</h5>
+                            <form id="settings-security-form">
+                                <div class="mb-3">
+                                    <label class="form-label small text-white opacity-75">Current Password</label>
+                                    <input type="password" class="form-control dash-input" placeholder="••••••••">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small text-white opacity-75">New Password</label>
+                                    <input type="password" class="form-control dash-input" placeholder="••••••••">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center pt-2">
+                                    <span class="small text-white opacity-75">Two-Factor Authentication (2FA)</span>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1">Enabled</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-end">
+                        <button type="button" id="save-settings-btn" class="btn btn-primary px-4 py-2 fw-bold">Save Settings</button>
+                    </div>
                 </div>
             </div>
 

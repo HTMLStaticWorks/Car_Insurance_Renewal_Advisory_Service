@@ -186,40 +186,6 @@ section {
         font-size: 1.1rem;
         padding: 10px 0;
         font-weight: 600;
-        /* removed */
-        color: var(--light-gray) !important;
-        text-align: center;
-        font-family: var(--font-heading);
-    }
-
-    .navbar-expand-lg .ms-lg-4 {
-        margin-top: 20px !important;
-        margin-left: 0 !important;
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-.navbar.scrolled {
-    padding: 12px 0;
-    background: rgba(13, 13, 13, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
-}
-
-body.no-scroll {
-    overflow: hidden;
-}
-
-/* Navbar Dropdown Interactions & Caret Removal */
-.dropdown-toggle::after,
-.nav-link.dropdown-toggle::after {
-    display: none !important;
-}
-
-@media (min-width: 992px) {
-    .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
         margin-top: 0;
     }
 }
@@ -231,6 +197,17 @@ body.no-scroll {
     min-width: 160px;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Hide Bootstrap default dropdown caret arrow */
+.dropdown-toggle::after,
+.nav-link.dropdown-toggle::after,
+a.dropdown-toggle::after,
+button.dropdown-toggle::after,
+.dropdown-toggle-split::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
 }
 
 .nav-item.dropdown .dropdown-item {
@@ -305,6 +282,16 @@ body.no-scroll {
 .dropdown-item:hover {
     background-color: transparent !important;
     color: var(--accent-orange) !important;
+}
+
+/* --- Section Badges / Subtitles --- */
+h6.text-accent,
+.text-accent.section-badge,
+h6.section-badge {
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase;
 }
 
 /* --- Buttons --- */
@@ -383,14 +370,23 @@ button.btn-primary-trailtune:hover {
     border-radius: 6px !important;
 }
 
-.hero-section .btn-outline-trailtune {
+.hero-section .btn-outline-trailtune,
+body.dark-theme .hero-section .btn-outline-trailtune,
+body.light-theme .hero-section .btn-outline-trailtune {
     color: #FFFFFF !important;
     border-color: #FFFFFF !important;
+    background-color: transparent !important;
 }
 
-.hero-section .btn-outline-trailtune:hover {
+.hero-section .btn-outline-trailtune:hover,
+.hero-section a.btn-outline-trailtune:hover,
+body.dark-theme .hero-section .btn-outline-trailtune:hover,
+body.dark-theme .hero-section a.btn-outline-trailtune:hover,
+body.light-theme .hero-section .btn-outline-trailtune:hover,
+body.light-theme .hero-section a.btn-outline-trailtune:hover {
     background-color: #FFFFFF !important;
-    color: #000000 !important;
+    color: #0D0D0D !important;
+    border-color: #FFFFFF !important;
 }
 
 .hero-content-wrapper {
@@ -410,6 +406,22 @@ button.btn-primary-trailtune:hover {
 @media (max-width: 768px) {
     .hero-content-wrapper {
         padding: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section .hero-content-wrapper .d-flex .btn,
+    .hero-section-home2 .d-flex .btn,
+    .hero-section .btn-trailtune,
+    .hero-section-home2 .btn-trailtune {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: 50px !important;
+        min-height: 50px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 1.25rem !important;
     }
 }
 
@@ -1038,6 +1050,69 @@ body.light-theme .diag-card-overlay {
 .hero-section-home2 {
     position: relative;
     overflow: hidden;
+    color: #FFFFFF !important;
+}
+
+.hero-section-home2 h1,
+.hero-section-home2 h2,
+.hero-section-home2 h3,
+.hero-section-home2 p,
+.hero-section-home2 .lead,
+.hero-section-home2 .small,
+body.light-theme .hero-section-home2 h1,
+body.light-theme .hero-section-home2 h2,
+body.light-theme .hero-section-home2 h3,
+body.light-theme .hero-section-home2 p,
+body.light-theme .hero-section-home2 .lead,
+body.light-theme .hero-section-home2 .small,
+body.light-theme .hero-section-home2 div.small {
+    color: #FFFFFF !important;
+}
+
+.hero-section-home2 .text-accent,
+body.light-theme .hero-section-home2 .text-accent {
+    color: #3B82F6 !important;
+}
+
+.hero-section-home2 .border-secondary,
+body.light-theme .hero-section-home2 .border-secondary {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.hero-section-home2 .btn-outline-trailtune,
+body.light-theme .hero-section-home2 .btn-outline-trailtune {
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    background-color: transparent !important;
+}
+
+.hero-section-home2 .btn-outline-trailtune:hover,
+body.light-theme .hero-section-home2 .btn-outline-trailtune:hover {
+    background-color: #FFFFFF !important;
+    color: #0D0D0D !important;
+    border-color: #FFFFFF !important;
+}
+
+.hero-section-home2 .d-flex .btn,
+.hero-section-home2 .btn-trailtune {
+    min-width: 230px !important;
+    height: 52px !important;
+    min-height: 52px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 1.5rem !important;
+}
+
+@media (max-width: 576px) {
+    .hero-section-home2 .d-flex .btn,
+    .hero-section-home2 .btn-trailtune {
+        width: 100% !important;
+        max-width: 280px !important;
+        min-width: unset !important;
+        height: 50px !important;
+        min-height: 50px !important;
+    }
 }
 
 /* Ambient Radial Glow Aura */
@@ -2429,6 +2504,35 @@ body.light-theme .calc-ncb-btn.active {
     justify-content: space-between;
 }
 
+.calc-output-card .btn,
+.calc-output-card .btn span {
+    white-space: nowrap !important;
+}
+
+@media (max-width: 576px) {
+    .calc-output-card {
+        padding: 1.25rem 1rem !important;
+    }
+
+    .calc-output-card .btn {
+        font-size: 0.82rem !important;
+        padding: 0.75rem 0.5rem !important;
+        white-space: nowrap !important;
+        letter-spacing: 0 !important;
+    }
+
+    .calc-output-card .btn span {
+        white-space: nowrap !important;
+    }
+
+    .calc-output-card .btn svg,
+    .calc-output-card .btn i {
+        flex-shrink: 0 !important;
+        width: 16px !important;
+        height: 16px !important;
+    }
+}
+
 body.light-theme .calc-output-card {
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(241, 245, 249, 0.9) 100%);
     border-color: rgba(37, 99, 235, 0.2);
@@ -2457,22 +2561,343 @@ body.light-theme .savings-big-text {
     color: #1D4ED8;
 }
 
+#calc-recommended-addons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+}
+
+#calc-recommended-addons .calc-addon-tag,
 .calc-addon-tag {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    padding: 0 1rem !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    font-size: 0.85rem !important;
+    box-sizing: border-box !important;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    padding: 0.35rem 0.75rem;
-    font-size: 0.8rem;
     color: #D1D5DB;
-    display: inline-flex;
-    align-items: center;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
+body.light-theme #calc-recommended-addons .calc-addon-tag,
 body.light-theme .calc-addon-tag {
-    background: rgba(0, 0, 0, 0.04);
-    border-color: rgba(0, 0, 0, 0.08);
-    color: #374151;
+    background: rgba(0, 0, 0, 0.04) !important;
+    border-color: rgba(0, 0, 0, 0.08) !important;
+    color: #374151 !important;
+}
+
+/* --- Date Input Calendar Icon Contrast Fix (Night Theme) --- */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) brightness(100%) !important;
+    cursor: pointer !important;
+    opacity: 0.9 !important;
+    transition: opacity 0.2s ease !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1 !important;
+}
+
+/* --- Contact Page Responsive & Overflow Fixes --- */
+html, body {
+    overflow-x: hidden !important;
+}
+
+@media (max-width: 991px) {
+    .contact-info-item,
+    div.contact-info-item {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .contact-info-item .contact-icon-box {
+        margin-right: 0 !important;
+        margin-bottom: 0.85rem !important;
+    }
+
+    .contact-info-item div {
+        text-align: center !important;
+    }
+}
+
+/* --- Fixed Top Navbar Styling --- */
+body:not(.dashboard-page) {
+    padding-top: 74px !important;
+}
+
+.navbar,
+nav.navbar,
+.navbar.sticky-top {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1040 !important;
+    background: rgba(13, 13, 13, 0.95) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: var(--transition-base);
+}
+
+body.light-theme .navbar,
+body.light-theme nav.navbar,
+body.light-theme .navbar.sticky-top {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.hero-section {
+    min-height: calc(100vh - 74px) !important;
+    height: auto !important;
+}
+
+/* Dashboard Active Plans Table Contrast Fix (Dark Mode Default) */
+body:not(.light-theme) .dash-card table,
+body:not(.light-theme) .dash-card .table {
+    color: #FFFFFF !important;
+}
+
+body:not(.light-theme) .dash-card table th,
+body:not(.light-theme) .dash-card .table th {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 700 !important;
+}
+
+body:not(.light-theme) .dash-card table td,
+body:not(.light-theme) .dash-card .table td {
+    color: #FFFFFF !important;
+}
+
+body:not(.light-theme) .dash-card table td.opacity-75 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+body:not(.light-theme) .dash-card table .btn-outline-secondary,
+body:not(.light-theme) .dash-card table .btn-outline-light {
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background-color: transparent !important;
+}
+
+body:not(.light-theme) .dash-card table .btn-outline-secondary:hover,
+body:not(.light-theme) .dash-card table .btn-outline-light:hover {
+    background-color: #FFFFFF !important;
+    color: #0D0D0D !important;
+}
+
+/* Dashboard Input Contrast Styles */
+.dash-card .form-control,
+.dash-card .form-select,
+.dash-input {
+    background-color: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #FFFFFF !important;
+}
+
+.dash-card .form-control:focus,
+.dash-card .form-select:focus,
+.dash-input:focus {
+    background-color: #0F172A !important;
+    border-color: #2563EB !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25) !important;
+}
+
+/* Primary Badge Contrast Fix */
+.badge.bg-primary,
+span.badge.bg-primary,
+.dash-card .badge.bg-primary,
+body.light-theme .badge.bg-primary {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+/* Authentication Password Toggle & RTL Alignment Fixes */
+.password-group {
+    position: relative !important;
+}
+
+.password-group .form-control,
+.password-group input {
+    padding-right: 45px !important;
+}
+
+.password-toggle {
+    z-index: 10 !important;
+}
+
+body.rtl-mode .password-toggle,
+html[dir="rtl"] .password-toggle,
+*[dir="rtl"] .password-toggle {
+    right: auto !important;
+    left: 15px !important;
+}
+
+body.rtl-mode .password-group .form-control,
+body.rtl-mode .password-group input,
+html[dir="rtl"] .password-group .form-control,
+html[dir="rtl"] .password-group input {
+    padding-right: 15px !important;
+    padding-left: 45px !important;
+}
+
+/* Auth Page Top-Right Theme & RTL Toggles */
+.auth-toggles,
+body.rtl-mode .auth-toggles,
+html[dir="rtl"] .auth-toggles,
+*[dir="rtl"] .auth-toggles {
+    position: fixed !important;
+    top: 25px !important;
+    right: 25px !important;
+    left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    z-index: 1050 !important;
+}
+
+.auth-toggles button {
+    color: var(--light-gray) !important;
+    font-size: 1.25rem !important;
+    transition: var(--transition-base) !important;
+}
+
+body.light-theme .auth-toggles button {
+    color: #374151 !important;
+}
+
+.auth-toggles button:hover {
+    color: var(--accent-orange) !important;
+}
+
+/* --- Pricing Cards Alignment & Flex List Fixes (1024px & Desktop) --- */
+.card-trailtune ul.list-unstyled li,
+.card-trailtune ul li {
+    display: flex !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    line-height: 1.4 !important;
+}
+
+body.rtl-mode .card-trailtune ul.list-unstyled li,
+html[dir="rtl"] .card-trailtune ul.list-unstyled li {
+    text-align: right !important;
+}
+
+.card-trailtune ul.list-unstyled li i,
+.card-trailtune ul.list-unstyled li svg {
+    flex-shrink: 0 !important;
+    margin-right: 0.65rem !important;
+    margin-top: 0.22em !important;
+}
+
+body.rtl-mode .card-trailtune ul.list-unstyled li i,
+body.rtl-mode .card-trailtune ul.list-unstyled li svg,
+html[dir="rtl"] .card-trailtune ul.list-unstyled li i,
+html[dir="rtl"] .card-trailtune ul.list-unstyled li svg {
+    margin-right: 0 !important;
+    margin-left: 0.65rem !important;
+}
+
+.card-trailtune > p.small {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card-trailtune {
+        padding: 2.25rem 1.25rem !important;
+    }
+}
+
+/* --- Add-on Rider Cards Equal Alignment & Responsive Padding --- */
+.rider-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+.rider-card .rider-icon-box {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rider-card .rider-card-title {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+}
+
+.rider-card .rider-price-tag {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rider-card .rider-card-desc {
+    min-height: 110px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .rider-card {
+        padding: 2rem 1rem !important;
+    }
+}
+
+/* --- 1024px Dashboard Overview Layout Optimization --- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #view-overview .row.g-4 > .col-lg-7,
+    #view-overview .row.g-4 > .col-xl-8,
+    #view-overview .row.g-4 > .col-lg-5,
+    #view-overview .row.g-4 > .col-xl-4,
+    #view-overview .row.g-4 > .col-xl-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    #view-overview .col-lg-7 .row.g-4 > .col-md-6,
+    #view-overview .col-xl-8 .row.g-4 > .col-md-6 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        width: 50% !important;
+    }
+
+    #view-overview .dash-card {
+        padding: 1.75rem 1.5rem !important;
+    }
+
+    #view-overview .dash-card .badge {
+        white-space: nowrap !important;
+    }
+
+    #view-overview .dash-card h5 {
+        font-size: 1.15rem !important;
+        line-height: 1.3 !important;
+    }
 }
 
