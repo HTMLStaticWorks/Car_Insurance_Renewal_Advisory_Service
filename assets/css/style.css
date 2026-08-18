@@ -2336,3 +2336,110 @@ body.light-theme .icon-wrapper.accent {
 body.light-theme .partner-card:hover {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
+
+/* ==========================================
+   Interactive Policy Health & Savings Calculator
+   ========================================== */
+.calc-card {
+    background: #1E293B;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+body.light-theme .calc-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+
+.calc-veh-type-btn {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    color: #9CA3AF;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+body.light-theme .calc-veh-type-btn {
+    border-color: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.02);
+    color: #4B5563;
+}
+
+.calc-veh-type-btn.active, .calc-veh-type-btn:hover {
+    background: #2563EB;
+    border-color: #2563EB;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+}
+
+.calc-slider-input {
+    accent-color: #2563EB;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.calc-output-card {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    border-radius: 16px;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body.light-theme .calc-output-card {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(241, 245, 249, 0.9) 100%);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+.score-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    background: rgba(34, 197, 94, 0.15);
+    color: #22C55E;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.savings-big-text {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #2563EB;
+    letter-spacing: -1px;
+}
+
+body.light-theme .savings-big-text {
+    color: #1D4ED8;
+}
+
+.calc-addon-tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    color: #D1D5DB;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+body.light-theme .calc-addon-tag {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #374151;
+}
+

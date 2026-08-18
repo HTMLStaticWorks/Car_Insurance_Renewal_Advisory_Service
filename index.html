@@ -191,6 +191,107 @@
         </div>
     </section>
 
+    <!-- Interactive Policy Health & Savings Calculator (Unique Section) -->
+    <section class="py-5 border-bottom border-secondary position-relative">
+        <div class="container py-3">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-accent-subtle text-accent px-3 py-2 rounded-pill fw-bold text-uppercase mb-3" style="letter-spacing: 2px;">Exclusive Advisory Tool</span>
+                <h2 class="display-4 fw-bold">Live Policy Health & Savings Estimator</h2>
+                <p class="lead opacity-75 mx-auto" style="max-width: 650px;">Estimate your policy efficiency score and calculate potential renewal savings in real time based on your vehicle profile.</p>
+            </div>
+
+            <div class="calc-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="row g-5 align-items-center">
+                    <!-- Left: Interactive Inputs -->
+                    <div class="col-lg-7">
+                        <!-- Vehicle Type Tabs -->
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold text-uppercase opacity-75 mb-2" style="letter-spacing: 1px;">1. Select Vehicle Type</label>
+                            <div class="d-flex flex-wrap gap-2" id="calc-veh-types">
+                                <button type="button" class="calc-veh-type-btn active flex-fill d-flex align-items-center justify-content-center gap-2" data-type="sedan">
+                                    <i data-lucide="car" size="18"></i> Sedan / Hatchback
+                                </button>
+                                <button type="button" class="calc-veh-type-btn flex-fill d-flex align-items-center justify-content-center gap-2" data-type="suv">
+                                    <i data-lucide="shield" size="18"></i> SUV / Crossover
+                                </button>
+                                <button type="button" class="calc-veh-type-btn flex-fill d-flex align-items-center justify-content-center gap-2" data-type="ev">
+                                    <i data-lucide="zap" size="18"></i> Electric Vehicle (EV)
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle Age Range -->
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="form-label small fw-bold text-uppercase opacity-75 mb-0" style="letter-spacing: 1px;">2. Vehicle Age</label>
+                                <span class="fw-bold text-accent" id="calc-age-val">2 Years Old</span>
+                            </div>
+                            <input type="range" class="form-range calc-slider-input" id="calc-age-slider" min="0" max="10" step="1" value="2">
+                        </div>
+
+                        <!-- Current Annual Premium -->
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="form-label small fw-bold text-uppercase opacity-75 mb-0" style="letter-spacing: 1px;">3. Current Annual Premium ($)</label>
+                                <span class="fw-bold text-accent" id="calc-premium-val">$1,200 / yr</span>
+                            </div>
+                            <input type="range" class="form-range calc-slider-input" id="calc-premium-slider" min="300" max="3500" step="50" value="1200">
+                        </div>
+
+                        <!-- Claim-Free Years (NCB) -->
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-uppercase opacity-75 mb-2" style="letter-spacing: 1px;">4. Claim-Free Years (No Claim Bonus)</label>
+                            <div class="d-flex flex-wrap gap-2" id="calc-ncb-buttons">
+                                <button type="button" class="btn btn-outline-secondary btn-sm calc-ncb-btn" data-ncb="0">0 Years (0%)</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm calc-ncb-btn" data-ncb="20">1-2 Yrs (20%)</button>
+                                <button type="button" class="btn btn-primary-trailtune btn-sm calc-ncb-btn active" data-ncb="35">3-4 Yrs (35%)</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm calc-ncb-btn" data-ncb="50">5+ Yrs (50% Max)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Dynamic Results Card -->
+                    <div class="col-lg-5">
+                        <div class="calc-output-card text-start">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="small text-uppercase opacity-75 fw-bold" style="letter-spacing: 1px;">Policy Health Rating</span>
+                                    <span class="score-badge-pill" id="calc-score-badge">
+                                        <i data-lucide="check-circle-2" size="16" class="me-1"></i> <span id="calc-score-num">88%</span> Optimal
+                                    </span>
+                                </div>
+
+                                <div class="mb-4">
+                                    <span class="small opacity-75 d-block mb-1">Estimated Annual Advisory Savings</span>
+                                    <div class="savings-big-text mb-1" id="calc-savings-display">$360 / yr</div>
+                                    <p class="small opacity-75 mb-0">Potential savings by comparing top-rated insurer renewal quotes through CarInsure.</p>
+                                </div>
+
+                                <hr class="my-4 border-secondary opacity-25">
+
+                                <div class="mb-4">
+                                    <span class="small text-uppercase opacity-75 fw-bold d-block mb-2" style="letter-spacing: 1px;">Recommended Add-on Protection</span>
+                                    <div id="calc-recommended-addons">
+                                        <span class="calc-addon-tag"><i data-lucide="shield-check" size="13" class="me-1 text-accent"></i> Zero Depreciation</span>
+                                        <span class="calc-addon-tag"><i data-lucide="wrench" size="13" class="me-1 text-accent"></i> Engine Protection</span>
+                                        <span class="calc-addon-tag"><i data-lucide="headphones" size="13" class="me-1 text-accent"></i> 24/7 Roadside Assist</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="signup.html" class="btn btn-primary-trailtune btn-trailtune w-100 py-3 d-flex align-items-center justify-content-center gap-2">
+                                    <span>Lock In Savings & Get Quote</span>
+                                    <i data-lucide="arrow-right" size="18"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Service Highlights Grid -->
     <section>
         <div class="container">
@@ -451,6 +552,70 @@
     <script src="assets/js/main.js"></script>
     <script>
         lucide.createIcons();
+
+        // Interactive Policy Health & Savings Calculator Logic
+        (function initCalc() {
+            const ageSlider = document.getElementById('calc-age-slider');
+            const premiumSlider = document.getElementById('calc-premium-slider');
+            const ageVal = document.getElementById('calc-age-val');
+            const premiumVal = document.getElementById('calc-premium-val');
+            const savingsDisplay = document.getElementById('calc-savings-display');
+            const scoreNum = document.getElementById('calc-score-num');
+            const vehTypeBtns = document.querySelectorAll('.calc-veh-type-btn');
+            const ncbBtns = document.querySelectorAll('.calc-ncb-btn');
+
+            if (!ageSlider || !premiumSlider) return;
+
+            let selectedTypeMultiplier = 1.0;
+            let selectedNcb = 35;
+
+            vehTypeBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    vehTypeBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const type = btn.getAttribute('data-type');
+                    selectedTypeMultiplier = type === 'ev' ? 1.15 : (type === 'suv' ? 1.1 : 1.0);
+                    updateCalculator();
+                });
+            });
+
+            ncbBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    ncbBtns.forEach(b => {
+                        b.classList.remove('btn-primary-trailtune', 'active');
+                        b.classList.add('btn-outline-secondary');
+                    });
+                    btn.classList.remove('btn-outline-secondary');
+                    btn.classList.add('btn-primary-trailtune', 'active');
+                    selectedNcb = parseInt(btn.getAttribute('data-ncb')) || 0;
+                    updateCalculator();
+                });
+            });
+
+            function updateCalculator() {
+                const age = parseInt(ageSlider.value);
+                const currentPrem = parseInt(premiumSlider.value);
+
+                ageVal.textContent = age === 0 ? 'Brand New' : (age === 1 ? '1 Year Old' : `${age} Years Old`);
+                premiumVal.textContent = `$${currentPrem.toLocaleString()} / yr`;
+
+                // Calculate savings based on premium, NCB, and vehicle type
+                const discountRate = 0.18 + (selectedNcb / 100) * 0.22;
+                const calculatedSavings = Math.round(currentPrem * discountRate * selectedTypeMultiplier);
+                
+                // Calculate efficiency score
+                let score = Math.round(72 + (selectedNcb / 2.5) - (age * 1.2));
+                if (score > 98) score = 98;
+                if (score < 55) score = 55;
+
+                savingsDisplay.textContent = `$${calculatedSavings.toLocaleString()} / yr`;
+                scoreNum.textContent = `${score}%`;
+            }
+
+            ageSlider.addEventListener('input', updateCalculator);
+            premiumSlider.addEventListener('input', updateCalculator);
+            updateCalculator();
+        })();
     </script>
 </body>
 
