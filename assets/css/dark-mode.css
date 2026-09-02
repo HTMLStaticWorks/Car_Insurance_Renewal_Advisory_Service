@@ -212,8 +212,8 @@ body.light-theme .footer-social-link:hover svg {
 }
 
 body.light-theme .text-white-50,
-body.light-theme .opacity-75,
-body.light-theme .opacity-50 {
+body.light-theme :not(.bg-dark).opacity-75,
+body.light-theme :not(.bg-dark).opacity-50 {
     color: var(--secondary-gray) !important;
     opacity: 1 !important;
 }
