@@ -33,6 +33,14 @@
     /* Spacing */
     --section-padding: 100px 0;
     --section-padding-mobile: 60px 0;
+
+    /* Global Border Radius */
+    --theme-border-radius: var(--theme-border-radius);
+    --bs-border-radius: var(--theme-border-radius);
+    --bs-border-radius-sm: var(--theme-border-radius);
+    --bs-border-radius-lg: var(--theme-border-radius);
+    --bs-border-radius-xl: var(--theme-border-radius);
+    --bs-border-radius-2xl: var(--theme-border-radius);
 }
 
 /* AOS Transition Refinements */
@@ -195,7 +203,7 @@ section {
     border: 1px solid var(--border-color) !important;
     padding: 0.5rem 0;
     min-width: 160px;
-    border-radius: 8px;
+    border-radius: var(--theme-border-radius);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -300,7 +308,7 @@ h6.section-badge {
     font-weight: 700;
     /* removed */
     padding: 12px 28px;
-    border-radius: 0;
+    border-radius: var(--theme-border-radius);
     letter-spacing: 0.05em;
     transition: var(--transition-base);
     position: relative;
@@ -367,7 +375,7 @@ button.btn-primary-trailtune:hover {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    border-radius: 6px !important;
+    border-radius: var(--theme-border-radius);
 }
 
 .hero-section .btn-outline-trailtune,
@@ -429,7 +437,7 @@ body.light-theme .hero-section a.btn-outline-trailtune:hover {
 .card-trailtune {
     background: var(--dark-gray);
     border: 1px solid var(--border-color);
-    border-radius: 0;
+    border-radius: var(--theme-border-radius);
     transition: var(--transition-base);
 }
 
@@ -437,7 +445,7 @@ body.light-theme .hero-section a.btn-outline-trailtune:hover {
 .card-trailtune {
     background: var(--dark-gray);
     border: 1px solid var(--border-color);
-    border-radius: 0;
+    border-radius: var(--theme-border-radius);
     transition: var(--transition-base);
     color: #FFFFFF !important;
 }
@@ -536,7 +544,7 @@ footer {
 .newsletter-input {
     background-color: var(--dark-gray);
     border: 1px solid var(--border-color);
-    border-radius: 0;
+    border-radius: var(--theme-border-radius);
     color: var(--pure-white);
 }
 
@@ -629,7 +637,7 @@ body.light-theme .accordion-button::after {
     justify-content: center;
     width: 52px;
     height: 52px;
-    border-radius: 8px;
+    border-radius: var(--theme-border-radius);
     flex-shrink: 0;
 }
 
@@ -913,7 +921,7 @@ body.light-theme .auth-card-centered {
     background: var(--dark-gray);
     border: 1px solid var(--border-color);
     padding: 0.75rem 1.5rem;
-    border-radius: 50px;
+    border-radius: var(--theme-border-radius);
     font-size: 0.9rem;
     font-weight: 600;
     display: inline-flex;
@@ -1203,7 +1211,7 @@ body.light-theme .hero-section-home2 .btn-outline-trailtune:hover {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 8px 16px;
-    border-radius: 50px;
+    border-radius: var(--theme-border-radius);
     font-size: 0.82rem;
     color: #FFFFFF;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
@@ -1337,7 +1345,7 @@ body.light-theme .step-item:hover .step-badge-circle {
 .vehicle-category-card {
     background-color: var(--dark-gray);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: var(--theme-border-radius);
     padding: 2rem 1rem;
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
@@ -1348,7 +1356,7 @@ body.light-theme .step-item:hover .step-badge-circle {
 .vehicle-category-card .category-icon-wrapper {
     width: 56px;
     height: 56px;
-    border-radius: 14px;
+    border-radius: var(--theme-border-radius);
     background-color: rgba(255, 255, 255, 0.06);
     display: inline-flex;
     align-items: center;
@@ -1425,7 +1433,7 @@ body.light-theme .vehicle-category-card:hover h6 {
     background: linear-gradient(180deg, #2563EB 0%, rgba(37, 99, 235, 0.35) 50%, #2563EB 100%);
     transform: translateX(-50%);
     z-index: 0;
-    border-radius: 4px;
+    border-radius: var(--theme-border-radius);
 }
 
 .journey-v-line::after {
@@ -1651,7 +1659,7 @@ body.light-theme .journey-row:hover .journey-card {
     text-align: center;
     background: rgba(15, 23, 42, 0.9);
     padding: 10px;
-    border-radius: 8px;
+    border-radius: var(--theme-border-radius);
     border: 1px solid rgba(37, 99, 235, 0.3);
     opacity: 0;
     visibility: hidden;
@@ -1801,7 +1809,7 @@ body.dashboard-page {
     padding: 0.75rem 1rem;
     color: #9CA3AF;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: var(--theme-border-radius);
     margin-bottom: 0.25rem;
     transition: all 0.2s ease;
     font-size: 0.95rem;
@@ -1833,7 +1841,7 @@ body.dashboard-page {
     height: 60%;
     width: 4px;
     background-color: #2563EB;
-    border-radius: 0 4px 4px 0;
+    border-radius: var(--theme-border-radius);
 }
 
 .sidebar-footer {
@@ -1875,7 +1883,7 @@ body.dashboard-page {
 .dash-card {
     background-color: #1E293B;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     padding: 1.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -1888,7 +1896,7 @@ body.dashboard-page {
 .dash-stat-icon {
     width: 44px;
     height: 44px;
-    border-radius: 10px;
+    border-radius: var(--theme-border-radius);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1906,7 +1914,7 @@ body.dashboard-page {
     padding: 1.25rem;
     background-color: #1E293B;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     margin-bottom: 1rem;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -1924,7 +1932,7 @@ body.dashboard-page {
     background-color: rgba(255, 255, 255, 0.05);
     width: 48px;
     height: 48px;
-    border-radius: 10px;
+    border-radius: var(--theme-border-radius);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1936,7 +1944,7 @@ body.dashboard-page {
 .quote-card {
     background-color: #1E293B;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -1956,7 +1964,7 @@ body.dashboard-page {
 
 .drop-zone {
     border: 2px dashed rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     padding: 3rem 2rem;
     text-align: center;
     cursor: pointer;
@@ -1998,7 +2006,7 @@ box-sizing: border-box !important;
     padding: 0.75rem 1rem;
     color: #9CA3AF;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: var(--theme-border-radius);
     margin-bottom: 0.25rem;
     transition: all 0.2s ease;
     font-size: 0.95rem;
@@ -2030,7 +2038,7 @@ box-sizing: border-box !important;
     height: 60%;
     width: 4px;
     background-color: #2563EB;
-    border-radius: 0 4px 4px 0;
+    border-radius: var(--theme-border-radius);
 }
 
 .sidebar-footer {
@@ -2110,7 +2118,7 @@ box-sizing: border-box !important;
 .dash-card {
     background-color: #1E293B;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     padding: 1.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -2123,7 +2131,7 @@ box-sizing: border-box !important;
 .dash-stat-icon {
     width: 44px;
     height: 44px;
-    border-radius: 10px;
+    border-radius: var(--theme-border-radius);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2141,7 +2149,7 @@ box-sizing: border-box !important;
     padding: 1.25rem;
     background-color: #1E293B;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     margin-bottom: 1rem;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -2159,7 +2167,7 @@ box-sizing: border-box !important;
     background-color: rgba(255, 255, 255, 0.05);
     width: 48px;
     height: 48px;
-    border-radius: 10px;
+    border-radius: var(--theme-border-radius);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2171,7 +2179,7 @@ box-sizing: border-box !important;
 .quote-card {
     background-color: #1E293B;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -2191,7 +2199,7 @@ box-sizing: border-box !important;
 
 .drop-zone {
     border: 2px dashed rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     padding: 3rem 2rem;
     text-align: center;
     cursor: pointer;
@@ -2294,7 +2302,7 @@ body.light-theme .advanced-section::before {
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 24px;
+    border-radius: var(--theme-border-radius);
     padding: 3rem;
     height: 100%;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -2398,7 +2406,7 @@ body.light-theme .icon-wrapper.accent {
 /* About Us - Partner Cards */
 .partner-card {
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
 }
 
 .partner-card:hover {
@@ -2418,7 +2426,7 @@ body.light-theme .partner-card:hover {
 .calc-card {
     background: #1E293B;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
+    border-radius: var(--theme-border-radius);
     padding: 2.5rem;
     position: relative;
     overflow: hidden;
@@ -2435,7 +2443,7 @@ body.light-theme .calc-card {
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.04);
     color: #9CA3AF;
-    border-radius: 12px;
+    border-radius: var(--theme-border-radius);
     padding: 0.75rem 1rem;
     transition: all 0.25s ease;
     font-weight: 500;
@@ -2490,13 +2498,13 @@ body.light-theme .calc-ncb-btn.active {
 .calc-slider-input {
     accent-color: #2563EB;
     height: 8px;
-    border-radius: 4px;
+    border-radius: var(--theme-border-radius);
 }
 
 .calc-output-card {
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(15, 23, 42, 0.8) 100%);
     border: 1px solid rgba(37, 99, 235, 0.3);
-    border-radius: 16px;
+    border-radius: var(--theme-border-radius);
     padding: 2rem;
     height: 100%;
     display: flex;
@@ -2542,7 +2550,7 @@ body.light-theme .calc-output-card {
     display: inline-flex;
     align-items: center;
     padding: 0.4rem 1rem;
-    border-radius: 50px;
+    border-radius: var(--theme-border-radius);
     background: rgba(34, 197, 94, 0.15);
     color: #22C55E;
     font-weight: 700;
@@ -2584,7 +2592,7 @@ body.light-theme .savings-big-text {
     box-sizing: border-box !important;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: var(--theme-border-radius);
     color: #D1D5DB;
 }
 
@@ -2901,3 +2909,10 @@ html[dir="rtl"] .card-trailtune ul.list-unstyled li svg {
     }
 }
 
+
+/* 1024px specific fix for partner badges to align horizontally */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .partner-card-title {
+        min-height: 60px;
+    }
+}
